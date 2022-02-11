@@ -1,6 +1,6 @@
 import "./about.css"
-import Igor from "../../img/igor.jpg"
-import Award from "../../img/award.png"
+import Computer from "../../img/computer.jpg"
+import Fatec from "../../img/fatec.png"
 
 
 const About = () => {
@@ -10,8 +10,8 @@ const About = () => {
                 <div className="a-card bg"></div>
                 <div className="a-card">
                     <img 
-                    src={Igor} 
-                    alt="" 
+                    src={Computer} 
+                    alt="computer" 
                     className="a-img"/>
                 </div>
             </div>
@@ -23,8 +23,20 @@ const About = () => {
                 <p className="a-desc">
                     I develop several types of applications, always focusing on optimizing processes, without compromising the final quality.
                 </p>
+            
+                <p className="a-sub">Agile methodologies</p>
+                <p className="a-desc">I use agile methodologies to develop my projects in harmony, save resources, and acquire agility and efficiency.</p>
+            
+            
+                <p className="a-sub">Soft Skills</p>
+                <p className="a-desc">I am always developing my skills and competencies related to human behavior to make the work environment a pleasant place.</p>
+            
+            
+                <p className="a-sub">Languages</p>
+                <p className="a-desc">I am attending an English course, where I will achieve fluency and proficiency by January 2022. Mother tongue: Portuguese.</p>
+            
                 <div className="a-award">
-                    <img src={Award} alt="" className="a-award-img" />
+                    <img src={Fatec} alt="fatec" className="a-award-img" />
                     <div className="a-award-texts">
                         <h4 className="a-award-title">Fatec Indaiatuba</h4>
                         <p className="a-award-desc">
