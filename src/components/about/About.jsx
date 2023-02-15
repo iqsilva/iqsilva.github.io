@@ -33,7 +33,7 @@ const About = () => {
             
             
                 <p className="a-sub">Languages</p>
-                <p className="a-desc">I am attending an English course, where I will achieve fluency and proficiency by January 2022. Mother tongue: Portuguese.</p>
+                <p className="a-desc"> Portuguese(Native), English(Advanced) and Spanish(Basic)</p>
             
                 <div className="a-award">
                     <img src={Fatec} alt="fatec" className="a-award-img" />
@@ -41,6 +41,14 @@ const About = () => {
                         <h4 className="a-award-title">Fatec Indaiatuba</h4>
                         <p className="a-award-desc">
                             Graduate Education, Systems Analysis and Development 
+                        </p>
+                        <h4 className="a-award-title">SENAI "Prof. Dr. Euryclides de Jesus Zerbini"</h4>
+                        <p className="a-award-desc">
+                            Technical Education, Computer Science Technician
+                        </p>
+                        <h4 className="a-award-title">Rockfeller Blumenau</h4>
+                        <p className="a-award-desc">
+                            Extracurricular Education, English 
                         </p>
                     </div>
                 </div>

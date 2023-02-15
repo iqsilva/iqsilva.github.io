@@ -10,12 +10,15 @@ const Intro = () => {
                     <h1 className="i-name">Igor Silva</h1>
                     <div className="i-title">
                         <div className="i-title-wrapper">
-                            <div className="i-title-item">Web Developer</div>
-                            <div className="i-title-item">UI/UX Designer</div>
+                            <div className="i-title-item">Front-End Developer</div>
+                            <div className="i-title-item">Javascript</div>
+                            <div className="i-title-item">HTML</div>
+                            <div className="i-title-item">CSS</div>
+                            <div className="i-title-item">Angular</div>
                         </div>
                     </div>
                     <p className="i-desc">
-                      I develop several types of applications, always focusing on optimizing processes, without compromising the final quality.
+                      As a developer, my goal is to provide quality software with easy usability. I have been working in the field for 3 years and 11 months and have a degree in Systems Analysis and Development.
                     </p>
                 </div>
                 <svg
