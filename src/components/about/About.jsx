@@ -24,7 +24,7 @@ const About = () => {
                     I develop several types of applications, always focusing on optimizing processes, without compromising the final quality.
                 </p>
             
-                <p className="a-sub">Agile methodologies</p>
+                <p className="a-sub">Agile Methodologies</p>
                 <p className="a-desc">I use agile methodologies to develop my projects in harmony, save resources, and acquire agility and efficiency.</p>
             
             
