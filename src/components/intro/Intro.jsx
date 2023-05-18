@@ -1,5 +1,10 @@
 import "./intro.css";
 import Me from "../../img/me.png";
+import HtmlLogo from "../../img/html.png";
+import CssLogo from "../../img/css.png";
+import JavascriptLogo from "../../img/javascript.png";
+import NodeLogo from "../../img/node.png";
+import ReactLogo from "../../img/react.png";
 
 const Intro = () => {
   return (
@@ -10,10 +15,11 @@ const Intro = () => {
           <h1 className="i-name">Igor Silva</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Javascript</div>
-              <div className="i-title-item">HTML</div>
-              <div className="i-title-item">CSS</div>
-              <div className="i-title-item">React</div>
+              <img src={HtmlLogo} alt="" className="i-title-img" />
+              <img src={CssLogo} alt="" className="i-title-img" />
+              <img src={JavascriptLogo} alt="" className="i-title-img" />
+              <img src={NodeLogo} alt="" className="i-title-img" />
+              <img src={ReactLogo} alt="" className="i-title-img" />
             </div>
           </div>
           <p className="i-desc">

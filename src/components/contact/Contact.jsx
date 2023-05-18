@@ -59,31 +59,31 @@ const Contact = () => {
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#FFF" }}
               type="text"
               placeholder="Name"
               name="user_name"
             />
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#FFF" }}
               type="text"
               placeholder="Subject"
               name="user_subject"
             />
             <input
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#FFF" }}
               type="text"
               placeholder="Email"
               name="user_email"
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333" }}
+              style={{ backgroundColor: darkMode && "#FFF" }}
               rows="5"
               placeholder="Message"
               name="message"
             />
-            <button>Submit</button>
-            {done && "Thank you..."}
+            <button style={{ color: darkMode && "#000" }}>Submit</button>
+            {done && alert("Thanks for your contact!")}
           </form>
         </div>
       </div>
