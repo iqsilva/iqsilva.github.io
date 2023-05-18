@@ -91,13 +91,16 @@ button {
     font-weight: 600;
   }
 
+  .c-info {
+    display: none;
+  }
+
   .c-info-item {
-    margin: 20px 0px;
-    width: 100%;
+    display: none;
   }
 
   .c-desc {
-    display: none;
+    display: flex;
   }
 
   form {

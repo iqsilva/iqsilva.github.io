@@ -15,34 +15,27 @@ const About = () => {
         <p className="a-sub">
           I'm a Systems Analysis and Development Technologist
         </p>
-        <p className="a-desc">
-          I develop several types of applications, always focusing on optimizing
-          processes, without compromising the final quality.
-        </p>
 
         <p className="a-sub">Soft Skills</p>
-        <p className="a-desc">
-          I am always developing my skills and competencies related to human
-          behavior to make the work environment a pleasant place.
-        </p>
+          <ul className="a-desc">
+            <li>Effective communication</li>
+            <li>Teamwork</li>
+            <li>Critical thinking</li>
+            <li>Adaptability</li>
+            <li>Problem solving</li>
+            <li>Time management</li>
+            <li>Empathy</li>
+            <li>Leadership</li>
+            <li>Strategic thinking</li>
+            <li>Continuous learning</li>
+          </ul>
 
-        <p className="a-sub">Fatec Indaiatuba</p>
-        <p className="a-desc">
-          {" "}
-          Graduate Education, Systems Analysis and Development
-        </p>
-
-        <p className="a-sub">SENAI "Prof. Dr. Euryclides de Jesus Zerbini"</p>
-        <p className="a-desc">
-          {" "}
-          Technical Education, Computer Science Technician
-        </p>
-
-        <p className="a-sub">Rockfeller Blumenau</p>
-        <p className="a-desc">
-          {" "}
-          Extracurricular Education, English
-        </p>
+        <p className="a-sub">Hard Skills</p>
+          <ul className="a-desc">
+            <li>Fatec Indaiatuba - Graduate Education, Systems Analysis and Development</li>
+            <li>SENAI "Prof. Dr. Euryclides de Jesus Zerbini" - Technical Education, Computer Science Technician</li>
+            <li>Rockfeller Blumenau - Extracurricular Education, English</li>
+          </ul>
       </div>
     </div>
   );
