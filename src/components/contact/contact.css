@@ -81,6 +81,11 @@ button {
 }
 
 @media screen and (max-width: 480px) {
+  .c {
+    height: 100vh;
+    position: relative;
+  }
+
   .c-wrapper {
     flex-direction: column;
     padding: 0px 50px;
@@ -91,16 +96,16 @@ button {
     font-weight: 600;
   }
 
-  .c-info {
-    display: none;
-  }
-
   .c-info-item {
-    display: none;
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+    width: 100%;
   }
 
   .c-desc {
-    display: flex;
+    display: none;
   }
 
   form {

@@ -2,6 +2,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  margin-top: 50px;
 }
 
 .a-left {
@@ -48,23 +49,26 @@
 }
 
 .a-desc {
-  font-weight: 300;
+  font-weight: 200;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 480px) {
   .a {
     flex-direction: column;
     text-align: center;
+    height: 100vh;
     margin-top: 50px;
-    height: 150vh;
   }
 
   .a-left {
-    width: 100%;
+    display: none;
   }
 
   .a-card {
-    height: 30vh;
+    display: none;
   }
 
   .a-card.bg {
@@ -72,9 +76,18 @@
   }
 
   .a-right {
-    padding: 20px;
+    padding: 0px;
   }
-  .a-img {
-    object-fit: scale-down;
+
+  .a-sub {
+    text-align: justify;
+  }
+
+  .a-desc {
+    font-weight: 300;
+    list-style-type: circle;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
   }
 }
