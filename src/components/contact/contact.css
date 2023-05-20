@@ -1,49 +1,20 @@
 .c {
   height: 100vh;
   position: relative;
-}
-
-.c-bg {
-  width: 20px;
-  height: 100%;
-  background-color: #bbe4e1;
-  position: absolute;
-}
-
-.c-wrapper {
-  padding: 50px;
-  display: flex;
-}
-
-.c-left {
-  flex: 1;
-}
-
-.c-right {
-  flex: 1;
+  padding: 0px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-self: center;
+  text-align: center;
+}
+
+.c-texts {
+  width: 65%;
 }
 
 .c-title {
   font-size: 50px;
   font-weight: 600;
-}
-
-.c-info-item {
-  display: flex;
-  align-items: center;
-  margin: 50px 0px;
-  font-weight: 300;
-  width: 70%;
-}
-
-.c-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
 }
 
 .c-desc {
@@ -86,22 +57,13 @@ button {
     position: relative;
   }
 
-  .c-wrapper {
-    flex-direction: column;
-    padding: 0px 50px;
+  .c-texts {
+    width: 100%;
   }
 
   .c-title {
     font-size: 50px;
     font-weight: 600;
-  }
-
-  .c-info-item {
-    display: flex;
-    align-items: center;
-    margin: 50px 0px;
-    font-weight: 300;
-    width: 100%;
   }
 
   .c-desc {
@@ -117,7 +79,6 @@ button {
   input {
     width: 100%;
     height: 40px;
-    margin: 10px;
     margin-left: 0;
   }
 
