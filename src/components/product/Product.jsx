@@ -1,10 +1,8 @@
 import "./product.css";
-import { ThemeContext } from "./../../context";
-import { useContext } from "react";
+import backimg from "../../img/backimg.png";
 
-const Product = ({ img, backimgdark, backimg, link }) => {
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
+const Product = ({ repo, link, description, image, language }) => {
+  
   return (
     <div className="p">
       <div className="p-browser">
@@ -13,8 +11,12 @@ const Product = ({ img, backimgdark, backimg, link }) => {
         <div className="p-circle"></div>
       </div>
       <a href={link} target="_blank" rel="noreferrer">
-        <img src={img} alt="" className="p-img" />
-        <img src={darkMode ? backimgdark : backimg} alt="" className="p-img" />
+        <img src={image} alt="" className="p-img" />
+        <img
+          src={backimg}
+          alt=""
+          className="p-imgback"
+        />
       </a>
     </div>
   );

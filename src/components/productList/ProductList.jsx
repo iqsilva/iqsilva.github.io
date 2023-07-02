@@ -1,8 +1,24 @@
 import "./productList.css";
 import Product from "../product/Product";
-import { products } from "../../data";
+import { useState, useEffect } from "react";
+
+const url = 'https://gh-pinned-repos.egoist.dev/?username=iqsilva';
 
 const ProductList = () => {
+const [repos, setRepos] = useState([]);
+
+  const getRepos = async () => {
+    const response = await fetch(url);
+    const repos = await response.json();
+    setRepos(repos);
+    console.log(repos);
+  };
+
+  useEffect(() => {
+    getRepos();
+  }, []);
+
+
   return (
     <div className="pl">
       <div className="pl-texts">
@@ -13,8 +29,8 @@ const ProductList = () => {
         </p>
       </div>
       <div className="pl-list">
-        {products.map((item) => (
-          <Product key={item.id} img={item.img} backimg={item.backimg} backimgdark={item.backimgdark} link={item.link} />
+        {repos.map((item, i) => (
+          <Product key={i} repo={item.repo} link={item.link} description={item.description} image={item.image} language={item.language}  />
         ))}
       </div>
     </div>
