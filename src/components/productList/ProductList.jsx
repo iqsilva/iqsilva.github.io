@@ -2,22 +2,25 @@ import "./productList.css";
 import Product from "../product/Product";
 import { useState, useEffect } from "react";
 
-const url = 'https://gh-pinned-repos.egoist.dev/?username=iqsilva';
+const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";
 
 const ProductList = () => {
-const [repos, setRepos] = useState([]);
+  const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const getRepos = async () => {
+    setLoading(true);
     const response = await fetch(url);
     const repos = await response.json();
-    setRepos(repos);
-    console.log(repos);
+    setTimeout(() => {
+      setRepos(repos);
+      setLoading(false);
+    }, 3000);
   };
 
   useEffect(() => {
     getRepos();
   }, []);
-
 
   return (
     <div className="pl">
@@ -28,11 +31,24 @@ const [repos, setRepos] = useState([]);
           project you want to know about.
         </p>
       </div>
-      <div className="pl-list">
-        {repos.map((item, i) => (
-          <Product key={i} repo={item.repo} link={item.link} description={item.description} image={item.image} language={item.language}  />
-        ))}
-      </div>
+      {loading ? (
+        <div className="spinner-container">
+          <div className="loading-spinner"></div>
+        </div>
+      ) : (
+        <div className="pl-list">
+          {repos.map((item, i) => (
+            <Product
+              key={i}
+              repo={item.repo}
+              link={item.link}
+              description={item.description}
+              image={item.image}
+              language={item.language}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
