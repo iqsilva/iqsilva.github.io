@@ -1,4 +1,4 @@
-import "./intro.css";
+import "./styles.css";
 import Me from "../../img/me.png";
 import HtmlLogo from "../../img/html.png";
 import CssLogo from "../../img/css.png";
