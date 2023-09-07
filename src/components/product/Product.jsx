@@ -1,5 +1,4 @@
-// import "./product.css";
-import "./styles.css";
+import "./product.css";
 import backimg from "../../img/backimg.png";
 
 const Product = ({ repo, link, description, image, language }) => {
