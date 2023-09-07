@@ -1,0 +1,66 @@
+.c 
+    height: 100vh
+    position: relative
+    padding: 0px 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    @media screen AND (max-width: 480px)
+        height: 100vh
+        position: relative
+
+    &-texts 
+        width: 65%
+        @media screen AND (max-width: 480px)
+            width: 100%
+
+    &-title 
+        font-size: 50px
+        font-weight: 600
+        @media screen AND (max-width: 480px)
+            font-size: 50px
+            font-weight: 600
+
+    &-desc 
+        font-weight: 200
+        @media screen AND (max-width: 480px)
+            display: none
+
+form 
+    margin-top: 20px
+    @media screen AND (max-width: 480px)
+        margin-top: 0px
+        display: flex
+        flex-wrap: wrap
+
+input 
+    width: 100%
+    height: 50px
+    border: none
+    border-bottom: 1px solid black
+    margin: 10px 0px
+    font-size: 14px
+    padding-left: 10px
+    @media screen AND (max-width: 480px)
+        width: 100%
+        height: 40px
+        margin-left: 0
+
+textarea 
+    width: 100%
+    margin: 10px 0px
+    font-size: 14px
+    padding-left: 10px
+
+button 
+    border: none
+    padding: 15px
+    background-color: #bbe4e1
+    color: white
+    font-weight: 500
+    cursor: pointer
+    @media screen AND (max-width: 480px)
+        width: 100%
+        margin-top: 10px
+    

@@ -1,10 +1,11 @@
-import "./about.css";
+import "./about.min.css";
 import Computer from "../../img/computer.png";
 
 const About = () => {
   return (
     <div className="a">
       <div className="a-left">
+        <div className="a-bg"></div>
         <div className="a-card">
           <img src={Computer} alt="computer" className="a-img" />
         </div>
