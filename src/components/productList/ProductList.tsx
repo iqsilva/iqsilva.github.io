@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";
 
-const ProductList = () => {
+const ProductList: React.FC = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -37,7 +37,7 @@ const ProductList = () => {
         </div>
       ) : (
         <div className="pl-list">
-          {repos.map((item, i) => (
+          {repos.map((item: any, i) => (
             <Product
               key={i}
               repo={item.repo}
