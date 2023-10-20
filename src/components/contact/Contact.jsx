@@ -1,15 +1,14 @@
 import "./contact.min.css";
-import * as React from 'react';
+import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
-import { useContext } from "react";
 
-const Contact: React.FC = () => {
-  const formRef = React.useRef<string | HTMLFormElement>('');
-  const [done, setDone] = React.useState<any>(null);
+const Contact = () => {
+  const formRef = useRef();
+  const [done, setDone] = useState(false);
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
@@ -37,7 +36,7 @@ const Contact: React.FC = () => {
             <b>Do you have an idea?</b> Get in touch. Always available for
             freelancing if the right project comes along me.
           </p>
-          <form ref={formRef as React.RefObject<HTMLFormElement>} onSubmit={handleSubmit}>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <input
               style={{ backgroundColor: darkMode && "#FFF" }}
               type="text"
@@ -58,13 +57,11 @@ const Contact: React.FC = () => {
             />
             <textarea
               style={{ backgroundColor: darkMode && "#FFF" }}
-              rows={5}
+              rows="5"
               placeholder="Message"
               name="message"
             />
-            <button 
-            style={{ color: darkMode && "#000" }}
-            >Submit</button>
+            <button style={{ color: darkMode && "#000" }}>Submit</button>
             {done && alert("Thanks for your contact!")}
           </form>
       </div>
