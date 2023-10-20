@@ -1,10 +1,10 @@
 import "./toggle.css";
 import Sun from "../../img/sun.png";
 import Moon from "../../img/moon.png";
-import { ThemeContext } from "../../context";
 import { useContext } from "react";
+import { ThemeContext } from "../../context";
 
-const Toggle: React.FC = () => {
+const Toggle = () => {
   const theme = useContext(ThemeContext);
   const handleClick = () => {
     theme.dispatch({ type: "TOGGLE" });
