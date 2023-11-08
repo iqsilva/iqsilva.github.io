@@ -15,11 +15,11 @@ const Intro = () => {
           <h1 className="i-name">Igor Silva</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <img src={HtmlLogo} alt="" className="i-title-img" />
-              <img src={CssLogo} alt="" className="i-title-img" />
-              <img src={JavascriptLogo} alt="" className="i-title-img" />
-              <img src={NodeLogo} alt="" className="i-title-img" />
-              <img src={ReactLogo} alt="" className="i-title-img" />
+              <img src={HtmlLogo} alt="HTML Logo" className="i-title-img" />
+              <img src={CssLogo} alt="CSS Logo" className="i-title-img" />
+              <img src={JavascriptLogo} alt="JavaScript Logo" className="i-title-img" />
+              <img src={NodeLogo} alt="Node.js Logo" className="i-title-img" />
+              <img src={ReactLogo} alt="React Logo" className="i-title-img" />
             </div>
           </div>
           <p className="i-desc">
@@ -86,7 +86,7 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <img src={Me} alt="" className="i-img" />
+        <img src={Me} alt="Me" className="i-img" />
       </div>
     </div>
   );
