@@ -25,7 +25,6 @@ describe("About component", () => {
     const hardSkillsElement = screen.getByText("Hard Skills");
     expect(hardSkillsElement).toBeInTheDocument();
     const hardSkillsList = screen.getAllByRole("list")[1];
-    console.log(hardSkillsList);
     expect(hardSkillsList).toBeInTheDocument();
     const hardSkillsItems = screen.getAllByRole("listitem", {
       container: hardSkillsList,
