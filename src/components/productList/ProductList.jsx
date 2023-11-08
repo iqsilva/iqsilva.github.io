@@ -2,7 +2,8 @@ import "./productList.css";
 import Product from "../product/Product";
 import { useState, useEffect } from "react";
 
-const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";
+// const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";
+const url = "https://gh-pinned-repos--master.deno.dev/?username=iqsilva";
 
 const ProductList = () => {
   const [repos, setRepos] = useState([]);
