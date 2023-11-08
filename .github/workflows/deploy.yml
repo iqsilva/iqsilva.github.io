@@ -22,7 +22,13 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing Components
+        run: npm run test
   deploy:
+    needs: test
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -37,8 +43,6 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
-      - name: Testing Components
-        run: npm run test
       - name: Build
         run: npm run build
       - name: Setup Pages

@@ -13,7 +13,7 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">Soft Skills</p>
-        <ul className="a-desc">
+        <ul className="a-soft">
           <li>Effective Communication</li>
           <li>Teamwork</li>
           <li>Critical Thinking</li>
@@ -26,7 +26,7 @@ const About = () => {
           <li>Continuous learning</li>
         </ul>
         <p className="a-sub">Hard Skills</p>
-        <ul className="a-desc">
+        <ul className="a-hard">
           <li>Programming Languages</li>
           <li>Algorithms and Data Structures</li>
           <li>Web Development</li>
