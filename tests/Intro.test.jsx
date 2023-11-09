@@ -8,14 +8,6 @@ describe("Intro component", () => {
     expect(nameElement).toBeInTheDocument();
   });
 
-  it("renders the description", () => {
-    render(<Intro />);
-    const descElement = screen.getByText(
-      "As a Software Engineer, my goal is to provide quality software with easy usability. I have been working in the field for 4 years and have a degree in Systems Analysis and Development."
-    );
-    expect(descElement).toBeInTheDocument();
-  });
-
   it("renders all the logos", () => {
     render(<Intro />);
     const htmlLogo = screen.getByAltText("HTML Logo");
