@@ -23,9 +23,14 @@ const Intro = () => {
               <img src={ReactLogo} alt="React Logo" className="i-title-img" />
             </div>
           </div>
+          <br />
           <p className="i-desc">
-            As a Software Engineer, my goal is to provide quality software with easy
-            usability. I have been working in the field for 4 years and have a degree in Systems Analysis and Development.
+            <b>Software Developer</b> with five years of experience in developing <b>web</b> and <b>mobile</b> applications for various clients, especially in the <b>healthcare sector</b>.
+            <br /><br />
+            Passionate about creating solutions that <b>empower</b> users and <b>improve</b> their lives.
+            Always eager to <b>learn</b> new technologies and frameworks.
+            <br /><br />
+            Searching for <b>opportunities</b> to apply the skills and experience to <b>challenging</b> and <b>meaningful</b> projects.
           </p>
         </div>
         <svg
