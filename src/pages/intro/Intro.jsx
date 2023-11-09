@@ -6,10 +6,12 @@ import CssLogo from "../../assets/css.png";
 import JavascriptLogo from "../../assets/javascript.png";
 import NodeLogo from "../../assets/node.png";
 import ReactLogo from "../../assets/react.png";
+import Toggle from "../../components/toggle/Toggle";
 
 const Intro = () => {
   return (
     <div className="i">
+      <Toggle />
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, my name is</h2>

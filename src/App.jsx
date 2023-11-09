@@ -1,10 +1,11 @@
+import React, { useContext } from "react";
+import { ThemeContext } from "./context";
+import Navbar from "./components/navbar/Navbar";
+
 import Intro from "./pages/intro/Intro";
 import About from "./pages/about/About";
 import ProductList from "./pages/productList/ProductList";
 import Contact from "./pages/contact/Contact";
-import Toggle from "./components/toggle/Toggle";
-import { ThemeContext } from "./context";
-import React, { useContext } from "react";
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -16,7 +17,7 @@ const App = () => {
         color: darkMode && "white",
       }}
     >
-      <Toggle />
+      <Navbar />
       <Intro />
       <About />
       <ProductList />
