@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./product.css";
-import backimg from "../../img/backimg.png";
+import backimg from "../../assets/backimg.png";
 
 const Product = ({ link, image }) => {
   Product.propTypes = {

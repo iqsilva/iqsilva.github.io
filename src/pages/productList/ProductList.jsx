@@ -1,5 +1,5 @@
 import "./productList.css";
-import Product from "../product/Product";
+import Product from "../../components/product/Product";
 import React, { useState, useEffect } from "react";
 
 // const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";

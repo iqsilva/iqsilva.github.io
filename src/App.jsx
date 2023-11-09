@@ -1,7 +1,7 @@
-import Intro from "./components/intro/Intro";
-import About from "./components/about/About";
-import ProductList from "./components/productList/ProductList";
-import Contact from "./components/contact/Contact";
+import Intro from "./pages/intro/Intro";
+import About from "./pages/about/About";
+import ProductList from "./pages/productList/ProductList";
+import Contact from "./pages/contact/Contact";
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
 import React, { useContext } from "react";

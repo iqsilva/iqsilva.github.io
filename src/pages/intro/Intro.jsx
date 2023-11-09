@@ -1,11 +1,11 @@
 import React from "react";
 import "./intro.min.css";
-import Me from "../../img/me.png";
-import HtmlLogo from "../../img/html.png";
-import CssLogo from "../../img/css.png";
-import JavascriptLogo from "../../img/javascript.png";
-import NodeLogo from "../../img/node.png";
-import ReactLogo from "../../img/react.png";
+import Me from "../../assets/me.png";
+import HtmlLogo from "../../assets/html.png";
+import CssLogo from "../../assets/css.png";
+import JavascriptLogo from "../../assets/javascript.png";
+import NodeLogo from "../../assets/node.png";
+import ReactLogo from "../../assets/react.png";
 
 const Intro = () => {
   return (

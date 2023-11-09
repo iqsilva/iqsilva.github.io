@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.min.css";
-import Computer from "../../img/computer.png";
+import Computer from "../../assets/computer.png";
 
 const About = () => {
   return (
