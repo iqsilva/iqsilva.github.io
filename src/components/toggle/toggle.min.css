@@ -12,12 +12,10 @@
   align-items: center;
   justify-content: space-around;
 }
-
 .t-icon {
   width: 15px;
   height: 15px;
 }
-
 .t-button {
   width: 25px;
   height: 25px;
@@ -26,3 +24,5 @@
   position: absolute;
   cursor: pointer;
 }
+
+/*# sourceMappingURL=toggle.min.css.map */
