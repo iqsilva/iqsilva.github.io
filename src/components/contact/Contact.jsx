@@ -1,5 +1,5 @@
 import "./contact.min.css";
-import { useContext, useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
 
@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div className="c">
       <div className="c-texts">
-      <h1 className="c-title">Let's discuss your project</h1>
+      <h1 className="c-title">Let&#39;s discuss your project</h1>
       <p className="c-desc">
             <b>Do you have an idea?</b> Get in touch. Always available for
             freelancing if the right project comes along me.

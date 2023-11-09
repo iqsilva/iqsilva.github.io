@@ -1,8 +1,16 @@
+import React from "react";
+import PropTypes from "prop-types";
 import "./product.css";
 import backimg from "../../img/backimg.png";
 
-const Product = ({ repo, link, description, image, language }) => {
-  
+const Product = ({ link, image }) => {
+  Product.propTypes = {
+    repo: PropTypes.string,
+    link: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    image: PropTypes.string.isRequired,
+    language: PropTypes.string,
+  };
   return (
     <div className="p">
       <div className="p-browser">

@@ -1,3 +1,4 @@
+import React from "react";
 import "./intro.min.css";
 import Me from "../../img/me.png";
 import HtmlLogo from "../../img/html.png";

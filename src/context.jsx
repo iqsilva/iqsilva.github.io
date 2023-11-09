@@ -1,4 +1,5 @@
-import { createContext, useReducer } from "react";
+import React, { createContext, useReducer } from "react";
+import PropTypes from "prop-types";
 
 export const ThemeContext = createContext();
 
@@ -14,6 +15,10 @@ const themeReducer = (state, action) => {
 };
 
 export const ThemeProvider = (props) => {
+  ThemeProvider.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+
   const [state, dispatch] = useReducer(themeReducer, INITIAL_STATE);
 
   return (

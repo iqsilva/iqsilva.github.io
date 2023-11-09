@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Intro from "./Intro";
+import Intro from "../src/components/intro/Intro";
 
 describe("Intro component", () => {
   it("renders the name 'Igor Silva'", () => {

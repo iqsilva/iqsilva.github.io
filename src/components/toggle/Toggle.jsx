@@ -1,7 +1,7 @@
 import "./toggle.css";
 import Sun from "../../img/sun.png";
 import Moon from "../../img/moon.png";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../../context";
 
 const Toggle = () => {
