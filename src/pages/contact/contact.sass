@@ -1,5 +1,5 @@
 .c 
-    height: 100vh
+    height: 90vh
     position: relative
     padding: 0px 50px
     display: flex
@@ -7,7 +7,7 @@
     align-items: center
     text-align: center
     @media screen AND (max-width: 480px)
-        height: 100vh
+        height: 90vh
         position: relative
 
     &-texts 
@@ -35,10 +35,11 @@ form
         flex-wrap: wrap
 
 input 
+    background-color: transparent
     width: 100%
     height: 50px
     border: none
-    border-bottom: 1px solid black
+    border-bottom: 1px solid #2E3047
     margin: 10px 0px
     font-size: 14px
     padding-left: 10px
@@ -48,6 +49,8 @@ input
         margin-left: 0
 
 textarea 
+    background-color: transparent
+    border: 1px solid #2E3047
     width: 100%
     margin: 10px 0px
     font-size: 14px
@@ -56,7 +59,7 @@ textarea
 button 
     border: none
     padding: 15px
-    background-color: #96bbfe
+    background-color: #3C3F58
     color: white
     font-weight: 500
     cursor: pointer

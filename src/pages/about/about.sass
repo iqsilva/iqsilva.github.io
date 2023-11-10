@@ -2,12 +2,10 @@
     height: 100vh
     display: flex
     align-items: center
-    margin-top: 50px
     @media screen AND (max-width: 480px)
         flex-direction: column
         text-align: center
-        height: 100vh
-        margin-top: 50px
+        height: 85vh
 
     &-left
         flex: 1
@@ -54,7 +52,7 @@
 
     &-soft, &-hard
         margin-left: 50px
-        font-weight: 200
+        font-weight: 300
         list-style-type: none
         padding: 0
         @media screen AND (max-width: 480px)
@@ -66,8 +64,8 @@
     
     &-bg 
         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)
-        background: rgb(205,255,217)
-        background: linear-gradient(90deg, rgba(205,255,217,1) 26%, rgba(150,187,254,1) 100%)
+        background: rgb(60,63,88)
+        background: linear-gradient(90deg, rgba(60,63,88,1) 0%, rgba(59,186,156,1) 100%)
         width: 100%
         height: 100%
         position: absolute
