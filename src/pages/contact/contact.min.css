@@ -32,7 +32,7 @@
   }
 }
 .c-desc {
-  font-weight: 200;
+  font-weight: 300;
 }
 @media screen and (max-width: 480px) {
   .c-desc {
@@ -93,6 +93,10 @@ button {
     width: 100%;
     margin-top: 10px;
   }
+}
+
+::placeholder {
+  color: #3C3F58;
 }
 
 /*# sourceMappingURL=contact.min.css.map */

@@ -1,6 +1,7 @@
 import "./productList.css";
 import Product from "../../components/product/Product";
 import React, { useState, useEffect } from "react";
+import Loader from "../../components/loader/Loader";
 
 // const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";
 const url = "https://gh-pinned-repos--master.deno.dev/?username=iqsilva";
@@ -33,9 +34,7 @@ const ProductList = () => {
         </p>
       </div>
       {loading ? (
-        <div className="spinner-container">
-          <div className="loading-spinner"></div>
-        </div>
+        <Loader/>
       ) : (
         <div className="pl-list">
           {repos.map((item, i) => (
