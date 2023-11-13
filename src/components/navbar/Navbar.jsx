@@ -20,13 +20,13 @@ const Navbar = () => {
           <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/about">Sobre</NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/about">About</NavLink>
         </li>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/product">Projetos</NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/product">Projects</NavLink>
         </li>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/contact">Contato</NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/contact">Contact</NavLink>
         </li>
       </ul>
     </nav>
