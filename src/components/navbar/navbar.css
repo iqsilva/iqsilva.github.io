@@ -19,6 +19,7 @@ nav .title {
     font-weight: bold;
     text-decoration: none;
     color: #3BBA9C;
+    margin-right: auto;
 }
 
 nav ul {
@@ -68,7 +69,7 @@ nav .menu span {
 
     nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     nav ul {

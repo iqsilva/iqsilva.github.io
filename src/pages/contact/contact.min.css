@@ -60,6 +60,7 @@ input {
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  color: #fff;
 }
 @media screen and (max-width: 480px) {
   input {
@@ -82,7 +83,7 @@ button {
   border: none;
   padding: 15px;
   background-color: #3C3F58;
-  color: white;
+  color: #3BBA9C;
   font-weight: 500;
   cursor: pointer;
 }

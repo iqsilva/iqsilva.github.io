@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./context";
+import React from "react";
+import { useTheme } from "./context/ThemeContext";
 import Navbar from "./components/navbar/Navbar";
-
 import Intro from "./pages/intro/Intro";
 import About from "./pages/about/About";
 import ProductList from "./pages/productList/ProductList";
@@ -10,15 +9,9 @@ import Contact from "./pages/contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
-  const theme = useContext(ThemeContext);
-  const darkMode = theme.state.darkMode;
+  const {val} = useTheme();
   return (
-    <div
-      style={{
-        backgroundColor: darkMode ? "#2E3047" : "#3BBA9C",
-        color: darkMode ? "#3BBA9C": "#2E3047",
-      }}
-    >
+    <div className={`${val ? `light`: `dark`}`}>
     <BrowserRouter>
         <Navbar />
           <Routes>
