@@ -4,7 +4,6 @@ import Intro from "./pages/intro/Intro";
 import About from "./pages/about/About";
 import ProductList from "./pages/productList/ProductList";
 import Contact from "./pages/contact/Contact";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
