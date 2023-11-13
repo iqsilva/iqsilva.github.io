@@ -16,12 +16,12 @@
 }
 .i {
   display: flex;
-  height: 90vh;
+  height: 100vh;
 }
 @media screen and (max-width: 480px) {
   .i {
     flex-direction: column;
-    height: 92vh;
+    height: 100vh;
   }
 }
 .i-left {
