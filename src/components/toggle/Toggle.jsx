@@ -1,14 +1,14 @@
 import "./toggle.min.css";
 import Sun from "../../assets/sun.png";
 import Moon from "../../assets/moon.png";
-import React, { useContext } from "react";
-import { ThemeContext } from "../../context";
+import React from "react";
+import { useTheme } from "../../context/ThemeContext";
 
 const Toggle = () => {
-  const theme = useContext(ThemeContext);
   const handleClick = () => {
-    theme.dispatch({ type: "TOGGLE" });
+    setVal((pre)=> !pre);
   };
+  const {val, setVal} = useTheme();
   return (
     <div className="t">
       <img src={Sun} alt="" className="t-icon" />
@@ -16,7 +16,7 @@ const Toggle = () => {
       <div
         className="t-button"
         onClick={handleClick}
-        style={{ left: theme.state.darkMode ? 0 : 25 }}
+        style={{ left: !val ? 0 : 25 }}
       ></div>
     </div>
   );
