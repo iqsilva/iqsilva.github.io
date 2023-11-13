@@ -1,12 +1,10 @@
 import "./contact.min.css";
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { useTheme } from "../../context/ThemeContext";
 
 const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
-  const {val} = useTheme();
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -28,7 +26,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className={`c ${val ? `light`: `dark`}`}>
+    <div className="c">
       <div className="c-texts">
       <h1 className="c-title">Let&#39;s discuss your project</h1>
       <p className="c-desc">
