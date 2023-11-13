@@ -1,5 +1,5 @@
 .c {
-  height: 90vh;
+  height: 100vh;
   position: relative;
   padding: 0px 50px;
   display: flex;
@@ -9,8 +9,7 @@
 }
 @media screen and (max-width: 480px) {
   .c {
-    height: 95vh;
-    position: relative;
+    height: 100vh;
   }
 }
 .c-texts {

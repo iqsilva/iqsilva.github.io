@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default function Alert({ children, type, message }) {
   Alert.propTypes = {
-    children: PropTypes.element.isRequired,
+    children: PropTypes.element,
     type: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired,
   };

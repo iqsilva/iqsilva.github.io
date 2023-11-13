@@ -6,12 +6,9 @@ import Alert from "../../components/alert/Alert";
 
 const Contact = () => {
   const formRef = useRef();
+
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
-  const [user_name, setUserName] = useState();
-  const [user_email, setUserEmail] = useState();
-  const [user_subject, setUserSubject] = useState();
-  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,25 +25,18 @@ const Contact = () => {
           setTimeout(() => {
             console.log(result.text);
             setDone(true);
-            resetForm();
+            e.target.reset();
             setLoading(false);
           }, 3000);
         },
         (error) => {
           setTimeout(() => {
             console.log(error.text);
-            resetForm();
+            e.target.reset();
             setLoading(false);
           }, 3000);
         }
       );
-  };
-
-  const resetForm = () => {
-    setUserName("");
-    setUserSubject("");
-    setUserEmail("");
-    setMessage("");
   };
 
   return (
@@ -58,38 +48,28 @@ const Contact = () => {
             freelancing if the right project comes along me.
           </p>
           {loading ? (
-            <div className="loader">
-              <Loader/>
-            </div>
+            <Loader/>
           ) : (
             <form ref={formRef} onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="Name"
                 name="user_name"
-                value={user_name}
-                onChange={(e) => setUserName(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Subject"
                 name="user_subject"
-                value={user_subject}
-                onChange={(e) => setUserSubject(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Email"
                 name="user_email"
-                value={user_email}
-                onChange={(e) => setUserEmail(e.target.value)}
               />
               <textarea
                 rows="5"
                 placeholder="Message"
                 name="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
               />
               <button>Submit</button>
               {done && <Alert type="success" message="Thanks for your contact"/>}
