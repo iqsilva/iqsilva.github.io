@@ -6,6 +6,7 @@ import Loader from "../../components/loader/Loader";
 const ProductList = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
+  let response_repos = [];
 
   const getRepos = async () => {
     setLoading(true);
@@ -33,10 +34,10 @@ const ProductList = () => {
             })
           });
           response.data.user.pinnedItems.nodes.map((item) => {
-            repos.push(item);
+            response_repos.push(item);
           });
           setTimeout(() => {
-            setRepos(repos);
+            setRepos(response_repos);
             setLoading(false);
           }, 3000);
   };
