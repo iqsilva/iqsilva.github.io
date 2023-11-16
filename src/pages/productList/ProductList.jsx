@@ -32,8 +32,7 @@ const ProductList = () => {
               }`
             })
           });
-          const result = await response.json();
-          result.data.user.pinnedItems.nodes.map((item) => {
+          response.data.user.pinnedItems.nodes.map((item) => {
             repos.push(item);
           });
           setTimeout(() => {
