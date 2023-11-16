@@ -2,20 +2,60 @@ import "./productList.css";
 import Product from "../../components/product/Product";
 import React, { useState, useEffect } from "react";
 import Loader from "../../components/loader/Loader";
+import { ApolloClient, createHttpLink, InMemoryCache, gql } from "@apollo/client";
+import { setContext } from '@apollo/client/link/context';
 
-// const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";
-const url = "https://gh-pinned-repos--master.deno.dev/?username=iqsilva";
+const httpLink = createHttpLink({
+  uri: 'https://api.github.com/graphql',
+});
 
 const ProductList = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
+  const token = import.meta.env.VITE_GITHUB_ACCESS_TOKEN
+
+  const authLink = setContext((_, { headers }) => {
+    return {
+      headers: {
+        ...headers,
+        authorization: `Bearer ${token}`,
+      }
+    }
+  });
+
+  const client = new ApolloClient({
+    link: authLink.concat(httpLink),
+    cache: new InMemoryCache()
+  });
 
   const getRepos = async () => {
     setLoading(true);
-    const response = await fetch(url);
-    const repos = await response.json();
+    const { data } = await client.query({
+      query: gql`
+        {
+          user(login: "iqsilva") {
+            pinnedItems(first: 6, types: [REPOSITORY]) {
+              totalCount
+              edges {
+                node {
+                  ... on Repository {
+                    id
+                    name
+                    url
+                    description
+                    openGraphImageUrl
+                  }
+                }
+              }
+            }
+          }
+        }
+      `
+    });
+    const { user } = data;
+    const pinnedItems = user.pinnedItems.edges.map(edge => edge.node);
     setTimeout(() => {
-      setRepos(repos);
+      setRepos(pinnedItems);
       setLoading(false);
     }, 3000);
   };
@@ -40,11 +80,10 @@ const ProductList = () => {
           {repos.map((item, i) => (
             <Product
               key={i}
-              repo={item.repo}
-              link={item.link}
+              repo={item.name}
+              link={item.url}
               description={item.description}
-              image={item.image}
-              language={item.language}
+              image={item.openGraphImageUrl}
             />
           ))}
         </div>

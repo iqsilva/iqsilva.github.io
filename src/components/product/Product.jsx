@@ -8,9 +8,9 @@ const Product = ({ link, image }) => {
     repo: PropTypes.string,
     link: PropTypes.string.isRequired,
     description: PropTypes.string,
-    image: PropTypes.string.isRequired,
-    language: PropTypes.string,
+    image: PropTypes.string.isRequired
   };
+
   return (
     <div className="p">
       <div className="p-browser">
