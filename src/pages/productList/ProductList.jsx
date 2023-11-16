@@ -3,8 +3,8 @@ import Product from "../../components/product/Product";
 import React, { useState, useEffect } from "react";
 import Loader from "../../components/loader/Loader";
 
-// const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";
-const url = "https://gh-pinned-repos--master.deno.dev/?username=iqsilva";
+const url = "https://gh-pinned-repos.egoist.dev/?username=iqsilva";
+// const url = "https://gh-pinned-repos--master.deno.dev/?username=iqsilva";
 
 const ProductList = () => {
   const [repos, setRepos] = useState([]);
