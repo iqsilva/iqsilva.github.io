@@ -17,16 +17,16 @@ const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/">Home</NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/"><i className="fa fa-home"></i> Home</NavLink>
         </li>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/about">About</NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/about"><i className="fa fa-code"></i> About</NavLink>
         </li>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/product">Projects</NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/product"><i className="fa fa-folder-open"></i> Projects</NavLink>
         </li>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/contact">Contact</NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/contact"><i className="fa fa-envelope"></i> Contact</NavLink>
         </li>
       </ul>
     </nav>
