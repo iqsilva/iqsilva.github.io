@@ -3,43 +3,29 @@ import Product from "../../components/product/Product";
 import React, { useState, useEffect } from "react";
 import Loader from "../../components/loader/Loader";
 
+const url = `https://api.github.com/users/iqsilva/repos`;
+
 const ProductList = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
-  let response_repos = [];
 
   const getRepos = async () => {
     setLoading(true);
-    const response = await fetch('https://api.github.com/graphql', {
-      method: 'post',
-      headers: {
-        Authorization: 'key','Content-Type': 'application/json',
-      },
-        body: JSON.stringify({
-            query:  `{
-                user(login: "iqsilva") {
-                  pinnedItems(first: 6, types: REPOSITORY) {
-                    nodes {
-                      ... on RepositoryInfo {
-                        id
-                        name
-                        url
-                        description
-                        openGraphImageUrl
-                      }
-                    }
-                  }
-                }
-              }`
-            })
-          });
-          response.data.user.pinnedItems.nodes.map((item) => {
-            response_repos.push(item);
-          });
-          setTimeout(() => {
-            setRepos(response_repos);
-            setLoading(false);
-          }, 3000);
+    const request = await fetch(url);
+    const response = await request.json();
+    const totalRepos = response.map((item) => ({
+      id: item.id,
+      name: item.name,
+      url: item.html_url,
+      description: item.description,
+      image: `https://opengraph.githubassets.com/1/iqsilva/${item.name}`,
+      stargazers_count: item.stargazers_count
+    }));
+    const filteredRepos = totalRepos.filter((item) => item.stargazers_count > 0);
+    setTimeout(() => {
+      setRepos(filteredRepos);
+      setLoading(false);
+    }, 3000);
   };
 
   useEffect(() => {
@@ -56,7 +42,7 @@ const ProductList = () => {
         </p>
       </div>
       {loading ? (
-        <Loader/>
+        <Loader />
       ) : (
         <div className="pl-list">
           {repos.map((item, i) => (
@@ -65,7 +51,7 @@ const ProductList = () => {
               repo={item.name}
               link={item.url}
               description={item.description}
-              image={item.openGraphImageUrl}
+              image={item.image}
             />
           ))}
         </div>
