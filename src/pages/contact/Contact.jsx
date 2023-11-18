@@ -1,43 +1,43 @@
 import "./contact.min.css";
-import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import React, { useRef, useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import Loader from "../../components/loader/Loader";
 import Alert from "../../components/alert/Alert";
 
 const Contact = () => {
-  const formRef = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
 
   const [loading, setLoading] = useState(false);
-  const [done, setDone] = useState(false);
+  const [alert, setAlert] = useState(0);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    emailjs
-      .sendForm(
-        "service_02zauo8",
-        "template_sqz5xke",
-        formRef.current,
-        "user_Be6m1m0mYhVqtenR3rgu4"
-      )
-      .then(
-        (result) => {
-          setTimeout(() => {
-            console.log(result.text);
-            setDone(true);
-            e.target.reset();
-            setLoading(false);
-          }, 3000);
-        },
-        (error) => {
-          setTimeout(() => {
-            console.log(error.text);
-            e.target.reset();
-            setLoading(false);
-          }, 3000);
-        }
-      );
+
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+
+    try {
+      setLoading(true);
+      await emailjs.send(serviceId, templateId, {
+        user_name: nameRef.current.value,
+        user_subject: emailRef.current.value,
+        user_email: subjectRef.current.value,
+        message: messageRef.current.value,
+      });
+      setAlert(1);
+    } catch (error) {
+      console.log(error);
+      setAlert(2);
+    } finally {
+      e.target.reset();
+      setLoading(false);
+    }
   };
+
+  useEffect(() => emailjs.init(import.meta.env.VITE_USER_ID), []);
 
   return (
     <div className="c">
@@ -50,29 +50,34 @@ const Contact = () => {
           {loading ? (
             <Loader/>
           ) : (
-            <form ref={formRef} onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
               <input
+                ref={nameRef}
                 type="text"
                 placeholder="Name"
                 name="user_name"
               />
               <input
+                ref={subjectRef}
                 type="text"
                 placeholder="Subject"
                 name="user_subject"
               />
               <input
+                ref={emailRef}
                 type="text"
                 placeholder="Email"
                 name="user_email"
               />
               <textarea
+                ref={messageRef}
                 rows="5"
                 placeholder="Message"
                 name="message"
               />
               <button>Submit</button>
-              {done && <Alert type="success" message="Thanks for your contact"/>}
+              {alert == 1 && <Alert type="success" message="Thanks for your contact"/>}
+              {alert == 2 && <Alert type="error" message="Something went wrong"/>}
             </form>
           )}
       </div>
