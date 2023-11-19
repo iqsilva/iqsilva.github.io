@@ -9,7 +9,7 @@ import ReactLogo from "../../assets/react.png";
 
 const Intro = () => {
   return (
-    <div className="i">
+    <div id="home" className="i">
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, my name is</h2>

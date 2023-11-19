@@ -1,5 +1,5 @@
 .active{
-    background-color: #3C3F58;
+    border-bottom: 2px solid #3BBA9C;
 }
 
 nav {
@@ -11,10 +11,9 @@ nav {
     position: sticky;
     top: 0;
     z-index: 999;
-    padding: 10px;
 }
 
-nav .title {
+nav .brand {
     font-size: 1.5rem;
     margin: 1rem;
     font-weight: bold;
@@ -37,11 +36,10 @@ nav ul li a {
     color: #3BBA9C;
     padding: 0.5rem;
     margin: 0 0.5rem;
-    border-radius: 0.5rem;
 }
 
 nav ul li a:not(.active):hover {
-    background-color: #3C3F58;
+    border-bottom: 2px solid #3BBA9C;
 }
 
 nav .menu {

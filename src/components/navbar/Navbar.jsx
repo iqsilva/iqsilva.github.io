@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav>
-      <Link to="/" className="title">
-        Igor&#39;s Portfolio
-      </Link>
+      <div className="brand">
+        <p>Igor&#39;s Portfolio</p>
+      </div>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
@@ -17,16 +16,19 @@ const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/"><i className="fa fa-home"></i> Home</NavLink>
+          <a href="#home"  onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-home"></i> Home</a>
         </li>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/about"><i className="fa fa-code"></i> About</NavLink>
+          <a href="#about" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-code"></i> About</a>
+        </li>
+        {/* <li>
+          <a href="#skills" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-code"></i> Skills</a>
+        </li> */}
+        <li>
+          <a href="#projects" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-folder-open"></i> Projects</a>
         </li>
         <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/product"><i className="fa fa-folder-open"></i> Projects</NavLink>
-        </li>
-        <li>
-          <NavLink onClick={() => setMenuOpen(!menuOpen)} to="/contact"><i className="fa fa-envelope"></i> Contact</NavLink>
+          <a href="#contact" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-envelope"></i> Contact</a>
         </li>
       </ul>
     </nav>
