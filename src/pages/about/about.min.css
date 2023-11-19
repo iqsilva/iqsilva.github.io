@@ -24,6 +24,7 @@
   }
 }
 .a-right {
+  padding-top: 50px;
   flex: 1;
 }
 @media screen and (max-width: 480px) {

@@ -40,7 +40,7 @@ const Contact = () => {
   useEffect(() => emailjs.init(import.meta.env.VITE_USER_ID), []);
 
   return (
-    <div className="c">
+    <div id="contact" className="c">
       <div className="c-texts">
       <h1 className="c-title">Let&#39;s discuss your project</h1>
       <p className="c-desc">
