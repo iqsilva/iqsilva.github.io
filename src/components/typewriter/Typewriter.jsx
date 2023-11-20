@@ -1,6 +1,12 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from "prop-types";
 
 const Typewriter = ({ text, delay, infinite }) => {
+  Typewriter.propTypes = {
+    text: PropTypes.node.isRequired,
+    delay: PropTypes.node.isRequired,
+    infinite: PropTypes.node.isRequired,
+  };
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,7 +27,9 @@ const Typewriter = ({ text, delay, infinite }) => {
     return () => clearTimeout(timeout);
   }, [currentIndex, delay, infinite, text]);
 
-  return <span>{currentText}</span>;
+  return (
+      <span>{currentText}</span>
+  );
 };
 
 export default Typewriter;
