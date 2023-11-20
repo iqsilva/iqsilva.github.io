@@ -1,5 +1,5 @@
-import "./contact.min.css";
 import React, { useRef, useState, useEffect } from "react";
+import styles from "./contact.module.css";
 import emailjs from "@emailjs/browser";
 import Loader from "../../components/loader/Loader";
 import Alert from "../../components/alert/Alert";
@@ -40,10 +40,10 @@ const Contact = () => {
   useEffect(() => emailjs.init(import.meta.env.VITE_USER_ID), []);
 
   return (
-    <div id="contact" className="c">
-      <div className="c-texts">
-      <h1 className="c-title">Let&#39;s discuss your project</h1>
-      <p className="c-desc">
+    <div id="contact" className={styles.contact}>
+      <div className={styles.contact_texts}>
+      <h1 className={styles.contact_title}>Let&#39;s discuss your project</h1>
+      <p className={styles.contact_desc}>
             <b>Do you have an idea?</b> Get in touch. Always available for
             freelancing if the right project comes along me.
           </p>

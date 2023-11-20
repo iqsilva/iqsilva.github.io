@@ -1,5 +1,5 @@
 .active{
-    border-bottom: 2px solid #3BBA9C;
+    border-bottom: 2px solid #fff;
 }
 
 nav {
@@ -7,7 +7,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #2E3047;
-    color: #3BBA9C;
+    color: #fff;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -18,7 +18,7 @@ nav .brand {
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: #3BBA9C;
+    color: #fff;
     margin-right: auto;
 }
 
@@ -33,13 +33,13 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: #3BBA9C;
+    color: #fff;
     padding: 0.5rem;
     margin: 0 0.5rem;
 }
 
 nav ul li a:not(.active):hover {
-    border-bottom: 2px solid #3BBA9C;
+    border-bottom: 2px solid #fff;
 }
 
 nav .menu {
@@ -56,7 +56,7 @@ nav .menu {
 nav .menu span {
     height: 0.4rem;
     width: 100%;
-    background-color: #3BBA9C;
+    background-color: #fff;
     border-radius: 0.2rem;
 }
 

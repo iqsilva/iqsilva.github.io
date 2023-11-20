@@ -8,11 +8,11 @@ const Skills = () => {
       <div className={styles.skills_left}>
         <div className={styles.skills_bg}></div>
         <div className={styles.skills_card}>
-          <img src={Computer} alt="Computer" className={styles.skills_img} />
+          <img src={Computer} alt="computer" className="a-img" />
         </div>
       </div>
       <div className={styles.skills_right}>
-        <h1 className={styles.skills_title}>Skills</h1>
+        <h1 className={styles.skills_title}>My Skills</h1>
         <p className={styles.skills_sub}>Soft Skills</p>
         <ul className={styles.skills_soft}>
           <li>Effective Communication</li>

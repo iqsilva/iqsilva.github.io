@@ -1,4 +1,4 @@
-.c {
+.contact {
   height: 100vh;
   position: relative;
   padding: 0px 50px;
@@ -8,34 +8,34 @@
   text-align: center;
 }
 @media screen and (max-width: 480px) {
-  .c {
-    height: 110vh;
+  .contact {
+    height: 100vh;
   }
 }
-.c-texts {
+.contact_texts {
   padding-top: 50px;
   width: 65%;
 }
 @media screen and (max-width: 480px) {
-  .c-texts {
+  .contact_texts {
     width: 100%;
   }
 }
-.c-title {
+.contact_title {
   font-size: 50px;
   font-weight: 600;
 }
 @media screen and (max-width: 480px) {
-  .c-title {
+  .contact_title {
     font-size: 50px;
     font-weight: 600;
   }
 }
-.c-desc {
+.contact_desc {
   font-weight: 300;
 }
 @media screen and (max-width: 480px) {
-  .c-desc {
+  .contact_desc {
     display: none;
   }
 }
@@ -51,17 +51,6 @@ form {
   }
 }
 
-input {
-  background-color: transparent;
-  width: 100%;
-  height: 50px;
-  border: none;
-  border-bottom: 1px solid #3BBA9C;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
-  color: #fff;
-}
 @media screen and (max-width: 480px) {
   input {
     width: 100%;
@@ -70,23 +59,8 @@ input {
   }
 }
 
-textarea {
-  background-color: transparent;
-  border: 1px solid #3BBA9C;
-  width: 100%;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
-  color: #fff;
-}
-
 button {
-  border: none;
-  padding: 15px;
-  background-color: #3BBA9C;
-  color: #3C3F58;
-  font-weight: 500;
-  cursor: pointer;
+  width: 25%;
 }
 @media screen and (max-width: 480px) {
   button {
@@ -96,7 +70,7 @@ button {
 }
 
 ::placeholder {
-  color: #3BBA9C;
+  color: #fff;
 }
 
-/*# sourceMappingURL=contact.min.css.map */
+/*# sourceMappingURL=contact.module.css.map */

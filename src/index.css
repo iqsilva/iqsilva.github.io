@@ -4,13 +4,13 @@
     }
     
 .dark {
-    background-color: #3C3F58;
-    color: #3BBA9C;
+    background-color: #14151d;
+    color: #fff;
 }
 
 .light {
-    background-color: #3BBA9C;
-    color: #3C3F58;
+    background-color: #fff;
+    color: #14151d;
 }
 
 /* width */
@@ -20,17 +20,52 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background-color: #3C3F58;
+    background-color: #14151d;
     box-shadow: inset 0 0 5px grey;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #3BBA9C; 
+    background: #fff; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #3C3F58; 
+    background: #14151d; 
   }
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+textarea {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background-color: #fff;
+  color: #14151d;
+  font-weight: 500;
+  cursor: pointer;
+}
