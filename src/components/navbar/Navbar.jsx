@@ -19,13 +19,13 @@ const Navbar = () => {
           <a href="#home"  onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-home"></i> Home</a>
         </li>
         <li>
-          <a href="#about" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-code"></i> About</a>
+          <a href="#about" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-user"></i> About</a>
         </li>
-        {/* <li>
-          <a href="#skills" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-code"></i> Skills</a>
-        </li> */}
         <li>
           <a href="#projects" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-folder-open"></i> Projects</a>
+        </li>
+        <li>
+          <a href="#skills" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-code"></i> Skills</a>
         </li>
         <li>
           <a href="#contact" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-envelope"></i> Contact</a>

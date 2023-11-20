@@ -1,14 +1,13 @@
 .pl {
-  padding: 0px 50px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 114vh;
+  height: 115vh;
 }
 
 .pl-texts {
-  padding-top: 50px;
   width: 65%;
 }
 
@@ -30,15 +29,11 @@
 
 @media screen and (max-width: 480px) {
   .pl {
-    height: 88vh;
+    height: 100vh;
     padding: 20px;
   }
 
   .pl-texts {
     width: 100%;
-  }
-
-  .pl-desc {
-    display: none;
   }
 }

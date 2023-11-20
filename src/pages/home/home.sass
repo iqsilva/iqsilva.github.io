@@ -1,23 +1,32 @@
 //usando variável
 $break-small: 480px
 
-.about
+/* criando animação */
+@keyframes morph
+    0%
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+    50%
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+    100%
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+
+.home
     display: flex
     height: 100vh
     @media screen AND (max-width: $break-small)
         flex-direction: column
 
-    &_left
+    &_right
         flex: 1
         display: flex
         align-items: center
         justify-content: center
 
-    &_right
+    &_left
         flex: 1
         position: relative
 
-    &_left_wrapper
+    &_right_wrapper
         padding: 50px
         display: flex
         flex-direction: column
@@ -28,18 +37,24 @@ $break-small: 480px
             text-align: center
             height: 100%
 
-    &_title
-        font-size: 50px
-        font-weight: 600
-        @media screen AND (max-width: 480px)
-            margin-left: 0px
+    &_name
+        font-size: 60px
     
-    &_desc
-        text-align: justify
+    &_list
+        padding: 0
+        list-style-type: none
+        text-decoration: none
+        text-align: center
+        justify-content: center
         align-items: center
-        @media screen AND (max-width: $break-small)
-            padding: 20px
-            text-align: center
+    
+    &_list_item
+        display: inline-block
+        padding: 20px
+
+    &_list a
+        color: #fff
+        text-decoration: none
 
     &_img
         width: 100%
@@ -54,7 +69,7 @@ $break-small: 480px
             object-fit: cover
 
     &_bg 
-        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%)
+        clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%)
         background: #fff
         width: 100%
         height: 100%
@@ -62,10 +77,8 @@ $break-small: 480px
         top: 0
         right: 0
 
-    button
-        width: 25%
-        margin-top: 20px
-        @media screen AND (max-width: 480px)
-            width: 50%
-            margin-top: 0px
-            margin-bottom: 20px
+    &_desc
+        text-align: justify
+        padding: 10px
+        align-items: center
+        text-align: center

@@ -2,7 +2,7 @@
   width: 30%;
   height: 40vh;
   margin: 20px 10px;
-  border: 2px solid #3BBA9C;
+  border: 2px solid #fff;
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
   background-color: #fff;
@@ -10,7 +10,7 @@
 
 .p-browser {
   height: 20px;
-  background-color: #3BBA9C;
+  background-color: #fff;
   display: flex;
   align-items: center;
   position: sticky;
@@ -22,7 +22,7 @@
   height: 6px;
   border-radius: 50%;
   margin: 3px;
-  background-color: white;
+  background-color: #3C3F58;
 }
 
 .p-img {
