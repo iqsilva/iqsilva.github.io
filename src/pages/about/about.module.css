@@ -5,6 +5,7 @@
 @media screen and (max-width: 480px) {
   .about {
     flex-direction: column;
+    height: 105vh;
   }
 }
 .about_left {
@@ -47,7 +48,6 @@
 @media screen and (max-width: 480px) {
   .about_desc {
     padding: 20px;
-    text-align: center;
   }
 }
 .about_img {
@@ -62,7 +62,7 @@
     margin: 0px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
   }
 }
 .about_bg {

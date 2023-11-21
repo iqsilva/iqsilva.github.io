@@ -6,6 +6,7 @@ $break-small: 480px
     height: 100vh
     @media screen AND (max-width: $break-small)
         flex-direction: column
+        height: 105vh
 
     &_left
         flex: 1
@@ -39,7 +40,6 @@ $break-small: 480px
         align-items: center
         @media screen AND (max-width: $break-small)
             padding: 20px
-            text-align: center
 
     &_img
         width: 100%
@@ -51,7 +51,7 @@ $break-small: 480px
             margin: 0px
             width: 100%
             height: 100%
-            object-fit: cover
+            object-fit: scale-down
 
     &_bg 
         clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%)
