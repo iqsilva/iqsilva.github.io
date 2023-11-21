@@ -1,6 +1,6 @@
-import "./productList.css";
-import Product from "../../components/product/Product";
 import React, { useState, useEffect } from "react";
+import styles from "./productList.module.css";
+import Product from "../../components/product/Product";
 import Loader from "../../components/loader/Loader";
 
 const url = `https://api.github.com/users/iqsilva/repos`;
@@ -33,10 +33,10 @@ const ProductList = () => {
   }, []);
 
   return (
-    <div id="projects" className="pl">
-      <div className="pl-texts">
-        <h1 className="pl-title">Some of my Projects</h1>
-        <p className="pl-desc">
+    <div id="projects" className={styles.product}>
+      <div className={styles.product_texts}>
+        <h1 className={styles.product_title}>Some of my Projects</h1>
+        <p className={styles.product_desc}>
           Go to my Github to get access to all the projects. Click on the
           project you want to know about.
         </p>
@@ -44,7 +44,7 @@ const ProductList = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="pl-list">
+        <div className={styles.product_list}>
           {repos.map((item, i) => (
             <Product
               key={i}
