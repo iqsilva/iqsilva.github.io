@@ -16,10 +16,8 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const serviceId = import.meta.env.VITE_SERVICE_ID;
     const templateId = import.meta.env.VITE_TEMPLATE_ID;
-
     try {
       setLoading(true);
       await emailjs.send(serviceId, templateId, {

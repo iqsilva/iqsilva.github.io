@@ -7,9 +7,7 @@ const About = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.download = 'Igor-Silva-CV';
-
     link.href = CV;
-
     link.click();
   };
   return (
