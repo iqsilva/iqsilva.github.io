@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import "./alert.css";
 
 export default function Alert({ children, type, message }) {
   Alert.propTypes = {
