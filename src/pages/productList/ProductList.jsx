@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./productList.module.css";
 import Product from "../../components/product/Product";
 import Loader from "../../components/loader/Loader";
+import { mapArray } from "../../utils/Arrays";
 
 const url = `https://api.github.com/users/iqsilva/repos`;
 
@@ -13,7 +14,7 @@ const ProductList = () => {
     setLoading(true);
     const request = await fetch(url);
     const response = await request.json();
-    const totalRepos = response.map((item) => ({
+    const totalRepos = mapArray(response, (item) => ({
       id: item.id,
       name: item.name,
       url: item.html_url,
