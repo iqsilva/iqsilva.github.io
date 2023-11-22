@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from "react";
-import styles from "./contact.module.css";
 import emailjs from "@emailjs/browser";
 import Loader from "../../components/loader/Loader";
 import Alert from "../../components/alert/Alert";
@@ -39,11 +38,11 @@ const Contact = () => {
   useEffect(() => emailjs.init(import.meta.env.VITE_USER_ID), []);
 
   return (
-    <div id="contact" className={styles.contact}>
-      <div className={styles.contact_left}>
-        <div className={styles.contact_left_wrapper}>
-        <h1 className={styles.contact_title}>Let&#39;s discuss your project</h1>
-        <p className={styles.contact_desc}>
+    <div id="contact" className="contact">
+      <div className="contact_left">
+        <div className="contact_left_wrapper">
+        <h1 className="contact_title">Let&#39;s discuss your project</h1>
+        <p className="contact_desc">
           <b>Do you have an idea?</b> Get in touch. Always available for
           freelancing if the right project comes along me.
         </p>
@@ -82,9 +81,9 @@ const Contact = () => {
         )}
         </div>
       </div>
-      <div className={styles.contact_right}>
-        <div className={styles.contact_bg}></div>
-        <img src={EmailImage} alt="Email Image" className={styles.contact_img} />
+      <div className="contact_right">
+        <div className="contact_bg"></div>
+        <img src={EmailImage} alt="Email Image" className="contact_img" />
       </div>
     </div>
   );

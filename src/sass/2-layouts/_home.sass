@@ -1,0 +1,54 @@
+@use '../1-base/base-mixins'
+@use '../1-base/variables'
+@use '../2-layouts/layouts-mixins'
+
+/* criando animação */
+@keyframes morph
+    0%
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+    50%
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+    100%
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+
+.home
+    @include layouts-mixins.page(100vh, 92vh)
+
+    &_left
+        @include layouts-mixins.image-section
+    
+    &_right
+        @include layouts-mixins.text-section
+
+    &_right_wrapper
+        @include layouts-mixins.wrapper
+
+    &_img
+        @include layouts-mixins.image
+
+    &_bg 
+        clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%)
+        @include layouts-mixins.bg
+
+    &_name
+        font-size: 60px
+    
+    &_list
+        padding: 0
+        list-style-type: none
+        text-decoration: none
+        text-align: center
+        justify-content: center
+        align-items: center
+    
+    &_list_item
+        display: inline-block
+        padding: 20px
+
+    &_list a
+        color: #fff
+        text-decoration: none
+
+    &_desc
+        text-align: center
+        align-items: center

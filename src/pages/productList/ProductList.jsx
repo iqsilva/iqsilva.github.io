@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./productList.module.css";
-import Product from "../../components/product/Product";
+import Card from "../../components/card/Card";
 import Loader from "../../components/loader/Loader";
 import { mapArray } from "../../utils/Arrays";
 
@@ -34,10 +33,10 @@ const ProductList = () => {
   }, []);
 
   return (
-    <div id="projects" className={styles.product}>
-      <div className={styles.product_texts}>
-        <h1 className={styles.product_title}>Some of my Projects</h1>
-        <p className={styles.product_desc}>
+    <div id="projects" className="productList">
+      <div className="productList_texts">
+        <h1 className="productList_title">Some of my Projects</h1>
+        <p className="productList_desc">
           Go to my Github to get access to all the projects. Click on the
           project you want to know about.
         </p>
@@ -45,9 +44,9 @@ const ProductList = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className={styles.product_list}>
+        <div className="productList_list">
           {repos.map((item, i) => (
-            <Product
+            <Card
               key={i}
               repo={item.name}
               link={item.url}
