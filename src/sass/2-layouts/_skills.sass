@@ -1,7 +1,13 @@
+@use '../1-base/base-mixins'
+@use '../1-base/variables'
+@use '../2-layouts/layouts-mixins'
+
 .skills
     height: 77vh
     display: flex
     align-items: center
+    background-color: variables.$bg-color
+    color: variables.$primary-color
     @media screen AND (max-width: 480px)
         flex-direction: column
         text-align: center
@@ -22,7 +28,7 @@
         height: 70%
         object-fit: scale-down
         z-index: 99
-        @media screen AND (max-width: 480px)
+        @include base-mixins.mobile
             width: 100%
             height: 100%
 
@@ -30,7 +36,7 @@
     &_container
         flex: 1
         height: 100%
-        @media screen AND (max-width: 480px)
+        @include base-mixins.mobile
             height: 50%
             
     &_title
@@ -40,7 +46,7 @@
 
     &_subtitle
         font-weight: 300
-        @media screen AND (max-width: 480px)
+        @include base-mixins.mobile
             margin: 20px 0px
 
     &_list
@@ -51,7 +57,7 @@
         font-weight: 300
         margin: 0
         padding: 0
-        @media screen AND (max-width: 480px)
+        @include base-mixins.mobile
             width: 80%
             margin: 20px
             padding: 10px
@@ -69,13 +75,7 @@
     
     &_bg 
         clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%)
-        background: #fff
-        width: 100%
-        height: 100%
-        position: absolute
-        top: 0
-        right: 0
-
+        @include layouts-mixins.bg
     button
-        @media screen AND (max-width: 480px)
+        @include base-mixins.mobile
             width: 50%

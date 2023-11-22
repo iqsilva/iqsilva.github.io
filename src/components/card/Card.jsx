@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./product.css";
 import backimg from "../../assets/backimg.png";
 
-const Product = ({ link, image }) => {
-  Product.propTypes = {
+const Card = ({ link, image }) => {
+  Card.propTypes = {
     repo: PropTypes.string,
     link: PropTypes.string.isRequired,
     description: PropTypes.string,
@@ -12,22 +11,22 @@ const Product = ({ link, image }) => {
   };
 
   return (
-    <div className="p">
-      <div className="p-browser">
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
+    <div className="card">
+      <div className="card_browser">
+        <div className="card_circle"></div>
+        <div className="card_circle"></div>
+        <div className="card_circle"></div>
       </div>
       <a href={link} target="_blank" rel="noreferrer">
-        <img src={image} alt="" className="p-img" />
+        <img src={image} alt="" className="card_img" />
         <img
           src={backimg}
           alt=""
-          className="p-imgback"
+          className="card_imgback"
         />
       </a>
     </div>
   );
 };
 
-export default Product;
+export default Card;

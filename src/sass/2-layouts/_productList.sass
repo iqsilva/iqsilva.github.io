@@ -1,16 +1,22 @@
-.product
+@use '../1-base/base-mixins'
+@use '../1-base/variables'
+@use '../2-layouts/layouts-mixins'
+
+.productList
     display: flex
     flex-direction: column
     align-items: center
     text-align: center
     height: 110vh
     padding: 50px
-    @media screen AND (max-width: 480px)
+    background-color: variables.$bg-color
+    color: variables.$primary-color
+    @include base-mixins.mobile
         padding: 20px
 
     &_texts 
         width: 65%
-        @media screen AND (max-width: 480px)
+        @include base-mixins.mobile
             width: 100%
 
     &_title

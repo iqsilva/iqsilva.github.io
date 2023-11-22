@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./skills.module.css";
 import SkillsImage from "../../assets/skills.png";
 import { soft, hard } from "../../data";
 
@@ -14,19 +13,19 @@ const Skills = () => {
   };
 
   return (
-    <div id="skills" className={styles.skills}>
-      <div className={styles.skills_left}>
-        <div className={styles.skills_bg}></div>
-        <img src={SkillsImage} alt="Skills Image" className={styles.skills_img} />
+    <div id="skills" className="skills">
+      <div className="skills_left">
+        <div className="skills_bg"></div>
+        <img src={SkillsImage} alt="Skills Image" className="skills_img" />
       </div>
-      <div className={styles.skills_right}>
-        <h1 className={styles.skills_title}>My Skills</h1>
-        <p className={styles.skills_subtitle}>Below is a list of the skills I possess to develop your project with quality and safety</p>
+      <div className="skills_right">
+        <h1 className="skills_title">My Skills</h1>
+        <p className="skills_subtitle">Below is a list of the skills I possess to develop your project with quality and safety</p>
         <button onClick={handleTabChange}>{currentTab == true ? "See Hard" : "See Soft"} Skills</button>
-        <div className={styles.skills_container}>
-          <ul className={styles.skills_list}>
+        <div className="skills_container">
+          <ul className="skills_list">
             {currentArray.map((item, i) => (
-              <li key={i} className={styles.skills_list_item}>{item} <i className="fa fa-check-circle"></i></li>
+              <li key={i} className="skills_list_item">{item} <i className="fa fa-check-circle"></i></li>
             ))}
           </ul>
         </div>
