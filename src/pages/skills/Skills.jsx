@@ -5,11 +5,24 @@ import { soft, hard } from "../../data";
 const Skills = () => {
   const [currentTab, setCurrentTab] = useState(true);
   const [currentArray, setCurrentArray] = useState(soft);
+  const [previousArray, setPreviousArray] = useState([]);
+  const [currentSkill, setCurrentSkill] = useState("");
+  const [isFiltered, setFiltered] = useState(true);
 
   const handleTabChange = (e) => {
     e.preventDefault();
     setCurrentTab(!currentTab);
     currentTab ? setCurrentArray(hard) : setCurrentArray(soft);
+  };
+
+  const handleItemClick = (e) => {
+    e.preventDefault();
+    setPreviousArray(currentArray);
+    const filteredArray = currentArray.filter((item) => item.name == e.target.innerText.trim());
+    setFiltered(!isFiltered);
+    isFiltered ? setCurrentArray(filteredArray) : setCurrentArray(previousArray)
+    const text = currentArray.filter((item) => item.name === e.target.innerText.trim())[0].description;
+    setCurrentSkill(text);
   };
 
   return (
@@ -20,14 +33,21 @@ const Skills = () => {
       </div>
       <div className="skills_right">
         <h1 className="skills_title">My Skills</h1>
-        <p className="skills_desc">Below is a list of the skills I possess to develop your project with quality and safety</p>
-        <button onClick={handleTabChange}>{currentTab == true ? "See Hard" : "See Soft"} Skills</button>
+        <p className="skills_desc">Click on the button below to view my skills and click on the skill for a detailed description</p>
+        {isFiltered ? (
+          <button onClick={handleTabChange} disabled={!isFiltered}>{currentTab == true ? "See Hard" : "See Soft"} Skills</button>
+        ):(null)}
         <div className="skills_container">
           <ul className="skills_list">
             {currentArray.map((item, i) => (
-              <li key={i} className="skills_list_item">{item} <i className="fa fa-check-circle"></i></li>
+              <li key={i} onClick={handleItemClick} className="skills_list_item">
+                {!isFiltered ? (<i className="fa fa-arrow-left"/>) : (null)}
+                &nbsp;
+                {item.name}
+              </li>
             ))}
           </ul>
+          {!isFiltered ? (<p className="skills_selected_item">{currentSkill}</p>) : (null)}
         </div>
         <br />
         <br />

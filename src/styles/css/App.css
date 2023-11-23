@@ -318,10 +318,13 @@ button {
   }
 }
 .skills_container {
+  padding-right: 20px;
+  text-align: justify;
   height: 100%;
 }
 @media (max-width: 480px) {
   .skills_container {
+    padding-right: 0px;
     height: 50%;
   }
 }
@@ -332,9 +335,11 @@ button {
 .skills_desc {
   text-align: justify;
   margin: 20px 0px;
+  padding-right: 20px;
 }
 @media (max-width: 480px) {
   .skills_desc {
+    padding-right: 0px;
     padding: 20px;
   }
 }
@@ -371,6 +376,14 @@ button {
   background: #fff;
   color: #000;
   cursor: pointer;
+}
+.skills_selected_item {
+  margin-top: 20px;
+}
+@media (max-width: 480px) {
+  .skills_selected_item {
+    padding: 20px;
+  }
 }
 .skills_bg {
   clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%);
