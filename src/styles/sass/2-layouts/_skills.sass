@@ -33,8 +33,11 @@
             height: 100%
 
     &_container
+        padding-right: 20px
+        text-align: justify
         height: 100%
         @include base-mixins.mobile
+            padding-right: 0px
             height: 50%
             
     &_title
@@ -42,7 +45,9 @@
 
     &_desc
         @include layouts-mixins.desc
+        padding-right: 20px
         @include base-mixins.mobile
+            padding-right: 0px
             padding: 20px
 
     &_list
@@ -68,6 +73,11 @@
                 color: #000
                 cursor: pointer
     
+    &_selected_item
+        margin-top: 20px
+        @include base-mixins.mobile
+            padding: 20px
+
     &_bg 
         clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%)
         @include layouts-mixins.bg
