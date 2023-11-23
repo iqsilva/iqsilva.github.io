@@ -26,6 +26,42 @@
   color: #fff;
 }
 
+input {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #fff;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+textarea {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+button {
+  width: 25%;
+  border: none;
+  padding: 15px;
+  background-color: #fff;
+  color: #14151d;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  button {
+    width: 50%;
+  }
+}
+
 /* criando animação */
 @keyframes morph {
   0% {
@@ -68,7 +104,7 @@
 }
 @media (max-width: 480px) {
   .home_right_wrapper {
-    padding: 0px;
+    padding: 20px;
     align-items: center;
     text-align: center;
     height: 100%;
@@ -106,11 +142,7 @@
 }
 .home_desc {
   text-align: justify;
-}
-@media (max-width: 480px) {
-  .home_desc {
-    padding: 20px;
-  }
+  margin: 20px 0px;
 }
 .home_list {
   display: flex;
@@ -156,7 +188,7 @@
 }
 @media (max-width: 480px) {
   .about_left_wrapper {
-    padding: 0px;
+    padding: 20px;
     align-items: center;
     text-align: center;
     height: 100%;
@@ -198,20 +230,7 @@
 }
 .about_desc {
   text-align: justify;
-}
-@media (max-width: 480px) {
-  .about_desc {
-    padding: 20px;
-  }
-}
-.about button {
-  width: 25%;
-  margin: 10px;
-}
-@media (max-width: 480px) {
-  .about button {
-    width: 50%;
-  }
+  margin: 20px 0px;
 }
 
 .productList {
@@ -227,7 +246,7 @@
 @media (max-width: 480px) {
   .productList {
     flex-direction: column;
-    height: 110vh;
+    height: 100vh;
   }
 }
 @media (max-width: 480px) {
@@ -249,11 +268,7 @@
 }
 .productList_desc {
   text-align: justify;
-}
-@media (max-width: 480px) {
-  .productList_desc {
-    padding: 20px;
-  }
+  margin: 20px 0px;
 }
 .productList_list {
   display: flex;
@@ -311,16 +326,16 @@
   }
 }
 .skills_title {
-  padding-top: 50px;
   font-size: 50px;
   font-weight: 600;
 }
-.skills_subtitle {
-  font-weight: 300;
+.skills_desc {
+  text-align: justify;
+  margin: 20px 0px;
 }
 @media (max-width: 480px) {
-  .skills_subtitle {
-    margin: 20px 0px;
+  .skills_desc {
+    padding: 20px;
   }
 }
 .skills_list {
@@ -335,16 +350,21 @@
 }
 @media (max-width: 480px) {
   .skills_list {
-    width: 80%;
     margin: 20px;
     padding: 10px;
     justify-content: space-around;
   }
 }
 .skills_list_item {
-  margin: 1vh;
-  padding: 1vh;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
   border: 1px solid #fff;
+}
+@media (max-width: 480px) {
+  .skills_list_item {
+    margin-right: 0;
+  }
 }
 .skills_list_item:hover {
   background: #fff;
@@ -360,11 +380,6 @@
   top: 0;
   right: 0;
   z-index: 0;
-}
-@media (max-width: 480px) {
-  .skills button {
-    width: 50%;
-  }
 }
 
 .contact {
@@ -397,7 +412,7 @@
 }
 @media (max-width: 480px) {
   .contact_left_wrapper {
-    padding: 0px;
+    padding: 20px;
     align-items: center;
     text-align: center;
     height: 100%;
@@ -409,11 +424,7 @@
 }
 .contact_desc {
   text-align: justify;
-}
-@media (max-width: 480px) {
-  .contact_desc {
-    padding: 20px;
-  }
+  margin: 20px 0px;
 }
 .contact_img {
   width: 100%;
@@ -450,39 +461,8 @@
   }
 }
 
-input {
-  background-color: transparent;
-  width: 100%;
-  height: 50px;
-  border: 1px solid #fff;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
-  color: #fff;
-}
-
-textarea {
-  background-color: transparent;
-  border: 1px solid #fff;
-  width: 100%;
-  margin: 10px 0px;
-  font-size: 14px;
-  padding-left: 10px;
-  color: #fff;
-}
-
-button {
-  width: 25%;
-  border: none;
-  padding: 15px;
-  background-color: #fff;
-  color: #14151d;
-  font-weight: 500;
-  cursor: pointer;
-}
 @media (max-width: 480px) {
   button {
-    width: 50%;
     margin: 0 auto;
   }
 }
