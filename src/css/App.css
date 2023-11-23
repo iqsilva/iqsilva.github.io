@@ -350,6 +350,7 @@ button {
 }
 @media (max-width: 480px) {
   .skills_list {
+    font-size: 12px;
     margin: 20px;
     padding: 10px;
     justify-content: space-around;
