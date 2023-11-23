@@ -15,10 +15,9 @@
 
     &_title
         @include layouts-mixins.title
-        padding-top: 50px
 
     &_desc 
-        font-weight: 300
+        @include layouts-mixins.desc
 
     &_img
         @include layouts-mixins.image
@@ -27,25 +26,17 @@
         clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%)
         @include layouts-mixins.bg
 
-form 
-    margin-top: 20px
+form
     @include base-mixins.mobile
-        margin: 20px
         display: flex
         flex-wrap: wrap
+        margin: 20px
 
 input 
     @include base-mixins.input
-    @include base-mixins.mobile
-        height: 40px
-        margin: 10px
-        padding: 10px
 
 textarea
     @include base-mixins.textarea
-    @include base-mixins.mobile
-        margin: 10px
-        padding: 10px
 
 button 
     width: 25%

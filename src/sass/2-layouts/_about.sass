@@ -1,8 +1,6 @@
 @use '../1-base/base-mixins'
 @use '../1-base/variables'
 @use '../2-layouts/layouts-mixins'
-//usando variável
-$break-small: 480px
 
 .about
     @include layouts-mixins.page(100vh, 105vh)
@@ -25,19 +23,12 @@ $break-small: 480px
 
     &_title
         @include layouts-mixins.title
-        @include base-mixins.mobile
-            margin-left: 0px
     
     &_desc
-        text-align: justify
-        align-items: center
-        @media screen AND (max-width: $break-small)
-            padding: 20px
+        @include layouts-mixins.desc
 
     button
         width: 25%
-        margin-top: 20px
-        @media screen AND (max-width: $break-small)
+        margin: 10px
+        @include base-mixins.mobile
             width: 50%
-            margin-top: 0px
-            margin-bottom: 20px

@@ -30,25 +30,19 @@
         clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%)
         @include layouts-mixins.bg
 
-    &_name
-        font-size: 60px
+    &_title
+        @include layouts-mixins.title
+    
+    &_desc
+        @include layouts-mixins.desc
     
     &_list
-        padding: 0
-        list-style-type: none
-        text-decoration: none
-        text-align: center
-        justify-content: center
-        align-items: center
+        @include layouts-mixins.list
+        justify-content: space-around
     
     &_list_item
-        display: inline-block
-        padding: 20px
+        @include layouts-mixins.list_item
 
     &_list a
         color: #fff
         text-decoration: none
-
-    &_desc
-        text-align: center
-        align-items: center
