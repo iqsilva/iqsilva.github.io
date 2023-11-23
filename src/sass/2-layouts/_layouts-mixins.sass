@@ -57,3 +57,19 @@
     font-size: 50px
     font-weight: 600
     
+@mixin desc
+    text-align: justify
+    @include base-mixins.mobile
+            padding: 20px
+
+@mixin list
+    display: flex
+    flex-wrap: wrap
+    list-style-type: none
+    font-size: 25px
+    margin: 0
+    padding: 0
+
+@mixin list_item
+    margin: 1vh
+    padding: 1vh

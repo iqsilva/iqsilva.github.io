@@ -100,28 +100,34 @@
   right: 0;
   z-index: 0;
 }
-.home_name {
-  font-size: 60px;
+.home_title {
+  font-size: 50px;
+  font-weight: 600;
+}
+.home_desc {
+  text-align: justify;
+}
+@media (max-width: 480px) {
+  .home_desc {
+    padding: 20px;
+  }
 }
 .home_list {
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  text-decoration: none;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
 }
 .home_list_item {
-  display: inline-block;
-  padding: 20px;
+  margin: 1vh;
+  padding: 1vh;
 }
 .home_list a {
   color: #fff;
   text-decoration: none;
-}
-.home_desc {
-  text-align: center;
-  align-items: center;
 }
 
 .about {
@@ -190,41 +196,39 @@
   font-size: 50px;
   font-weight: 600;
 }
-@media (max-width: 480px) {
-  .about_title {
-    margin-left: 0px;
-  }
-}
 .about_desc {
   text-align: justify;
-  align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .about_desc {
     padding: 20px;
   }
 }
 .about button {
   width: 25%;
-  margin-top: 20px;
+  margin: 10px;
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .about button {
     width: 50%;
-    margin-top: 0px;
-    margin-bottom: 20px;
   }
 }
 
 .productList {
   display: flex;
+  height: 110vh;
+  background-color: #14151d;
+  color: #fff;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 110vh;
   padding: 50px;
-  background-color: #14151d;
-  color: #fff;
+}
+@media (max-width: 480px) {
+  .productList {
+    flex-direction: column;
+    height: 110vh;
+  }
 }
 @media (max-width: 480px) {
   .productList {
@@ -244,13 +248,22 @@
   font-weight: 600;
 }
 .productList_desc {
-  margin: 20px 0px;
+  text-align: justify;
+}
+@media (max-width: 480px) {
+  .productList_desc {
+    padding: 20px;
+  }
 }
 .productList_list {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
+  width: 100%;
 }
 
 .skills {
@@ -290,7 +303,6 @@
   }
 }
 .skills_container {
-  flex: 1;
   height: 100%;
 }
 @media (max-width: 480px) {
@@ -315,10 +327,11 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  justify-content: unset;
-  font-weight: 300;
+  font-size: 25px;
   margin: 0;
   padding: 0;
+  justify-content: unset;
+  font-size: 15px;
 }
 @media (max-width: 480px) {
   .skills_list {
@@ -393,10 +406,14 @@
 .contact_title {
   font-size: 50px;
   font-weight: 600;
-  padding-top: 50px;
 }
 .contact_desc {
-  font-weight: 300;
+  text-align: justify;
+}
+@media (max-width: 480px) {
+  .contact_desc {
+    padding: 20px;
+  }
 }
 .contact_img {
   width: 100%;
@@ -425,14 +442,11 @@
   z-index: 0;
 }
 
-form {
-  margin-top: 20px;
-}
 @media (max-width: 480px) {
   form {
-    margin: 20px;
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
   }
 }
 
@@ -440,19 +454,11 @@ input {
   background-color: transparent;
   width: 100%;
   height: 50px;
-  border: none;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
   color: #fff;
-}
-@media (max-width: 480px) {
-  input {
-    height: 40px;
-    margin: 10px;
-    padding: 10px;
-  }
 }
 
 textarea {
@@ -463,12 +469,6 @@ textarea {
   font-size: 14px;
   padding-left: 10px;
   color: #fff;
-}
-@media (max-width: 480px) {
-  textarea {
-    margin: 10px;
-    padding: 10px;
-  }
 }
 
 button {
@@ -517,13 +517,7 @@ button {
   margin: 3px;
   background-color: #3C3F58;
 }
-.card_img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 5s ease;
-}
-.card_imgback {
+.card_img, .card_imgback {
   width: 100%;
   height: 100%;
   object-fit: contain;

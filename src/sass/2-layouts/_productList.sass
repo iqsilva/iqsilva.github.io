@@ -3,14 +3,11 @@
 @use '../2-layouts/layouts-mixins'
 
 .productList
-    display: flex
+    @include layouts-mixins.page(110vh, 110vh)
     flex-direction: column
     align-items: center
     text-align: center
-    height: 110vh
     padding: 50px
-    background-color: variables.$bg-color
-    color: variables.$primary-color
     @include base-mixins.mobile
         padding: 20px
 
@@ -20,14 +17,12 @@
             width: 100%
 
     &_title
-        font-size: 50px
-        font-weight: 600
+        @include layouts-mixins.title
 
     &_desc
-        margin: 20px 0px
+        @include layouts-mixins.desc
 
     &_list
-        width: 100%
-        display: flex
-        flex-wrap: wrap
+        @include layouts-mixins.list
         justify-content: space-between
+        width: 100%

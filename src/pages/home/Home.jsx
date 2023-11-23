@@ -11,7 +11,7 @@ const Home = () => {
       </div>
       <div className="home_right">
         <div className="home_right_wrapper">
-          <h1 className="home_name">Igor Silva</h1>
+          <h1 className="home_title">Igor Silva</h1>
           <h2 className="home_intro"><Typewriter text="Software Developer" delay={200} infinite /></h2>
           <p className="home_desc">
             Based in São Paulo, Brazil and loves to create things for the web.
