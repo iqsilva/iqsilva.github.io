@@ -26,7 +26,7 @@
     flex-direction: column
     justify-content: center
     @include base-mixins.mobile
-        padding: 0px
+        padding: 20px
         align-items: center
         text-align: center
         height: 100%
@@ -59,8 +59,7 @@
     
 @mixin desc
     text-align: justify
-    @include base-mixins.mobile
-            padding: 20px
+    margin: 20px 0px
 
 @mixin list
     display: flex
@@ -70,6 +69,3 @@
     margin: 0
     padding: 0
 
-@mixin list_item
-    margin: 1vh
-    padding: 1vh

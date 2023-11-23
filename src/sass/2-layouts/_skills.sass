@@ -38,28 +38,29 @@
             height: 50%
             
     &_title
-        padding-top: 50px
-        font-size: 50px
-        font-weight: 600
+        @include layouts-mixins.title
 
-    &_subtitle
-        font-weight: 300
+    &_desc
+        @include layouts-mixins.desc
         @include base-mixins.mobile
-            margin: 20px 0px
+            padding: 20px
 
     &_list
         @include layouts-mixins.list
         justify-content: unset
         font-size: 15px
         @include base-mixins.mobile
-            width: 80%
             margin: 20px
             padding: 10px
             justify-content: space-around
 
         &_item
-            @include layouts-mixins.list_item
+            margin-top: 20px
+            margin-right: 20px
+            padding: 10px
             border: 1px solid #fff
+            @include base-mixins.mobile
+                margin-right: 0
         
             &:hover
                 background: #fff
@@ -69,7 +70,3 @@
     &_bg 
         clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%)
         @include layouts-mixins.bg
-
-    button
-        @include base-mixins.mobile
-            width: 50%

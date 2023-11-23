@@ -20,7 +20,7 @@ const Skills = () => {
       </div>
       <div className="skills_right">
         <h1 className="skills_title">My Skills</h1>
-        <p className="skills_subtitle">Below is a list of the skills I possess to develop your project with quality and safety</p>
+        <p className="skills_desc">Below is a list of the skills I possess to develop your project with quality and safety</p>
         <button onClick={handleTabChange}>{currentTab == true ? "See Hard" : "See Soft"} Skills</button>
         <div className="skills_container">
           <ul className="skills_list">
