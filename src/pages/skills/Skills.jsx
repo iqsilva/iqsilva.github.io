@@ -35,13 +35,16 @@ const Skills = () => {
         <h1 className="skills_title">My Skills</h1>
         <p className="skills_desc">Click on the button below to view my skills and click on the skill for a detailed description</p>
         {isFiltered ? (
-          <button onClick={handleTabChange} disabled={!isFiltered}>{currentTab == true ? "See Hard" : "See Soft"} Skills</button>
+          <div className="skills_button_container">
+            <button className="skills_button" onClick={handleTabChange} disabled={currentTab}>Soft Skills</button>
+            <button className="skills_button" onClick={handleTabChange} disabled={!currentTab}>Hard Skills</button>
+          </div>
         ):(null)}
         <div className="skills_container">
           <ul className="skills_list">
             {currentArray.map((item, i) => (
               <li key={i} onClick={handleItemClick} className="skills_list_item">
-                {!isFiltered ? (<i className="fa fa-arrow-left"/>) : (null)}
+                {isFiltered ? (<i className="fa fa-plus"/>) : (<i className="fa fa-arrow-left"/>)}
                 &nbsp;
                 {item.name}
               </li>

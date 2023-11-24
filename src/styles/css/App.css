@@ -385,6 +385,28 @@ button {
     padding: 20px;
   }
 }
+.skills_button_container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+@media (max-width: 480px) {
+  .skills_button_container {
+    margin: 20px;
+  }
+}
+.skills_button {
+  background: transparent;
+  color: #ccc;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.skills_button:disabled {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  cursor: not-allowed;
+}
 .skills_bg {
   clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%);
   background: #fff;
