@@ -401,6 +401,11 @@ button {
   border: 1px solid #ccc;
   cursor: pointer;
 }
+.skills_button:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
 .skills_button:disabled {
   background: #fff;
   color: #000;
