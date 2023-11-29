@@ -423,6 +423,44 @@ button {
   z-index: 0;
 }
 
+.timeline {
+  display: flex;
+  height: 130vh;
+  background-color: #14151d;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+@media (max-width: 480px) {
+  .timeline {
+    flex-direction: column;
+    height: 120vh;
+  }
+}
+@media (max-width: 480px) {
+  .timeline {
+    padding: 20px;
+  }
+}
+.timeline_texts {
+  width: 65%;
+}
+@media (max-width: 480px) {
+  .timeline_texts {
+    width: 100%;
+  }
+}
+.timeline_title {
+  font-size: 50px;
+  font-weight: 600;
+}
+.timeline_desc {
+  text-align: justify;
+  margin: 20px 0px;
+}
+
 .contact {
   display: flex;
   height: 120vh;
