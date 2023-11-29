@@ -40,6 +40,7 @@ export const soft = [
     description: "Willingness to acquire new skills, seek knowledge, and stay updated.",
   },
 ];
+
 export const hard = [
   {
     name: "Programming Languages",
@@ -68,5 +69,38 @@ export const hard = [
   {
     name: "Mobile Development",
     description: "Experience in developing mobile applications, using cross-platform frameworks like React Native.",
+  },
+];
+
+export const experiences = [
+  {
+    title: "2021",
+    cardTitle: "Philips Clinical Informatics",
+    url: "https://www.linkedin.com/company/philips/",
+    cardSubtitle:"Entry Level Developer",
+    cardDetailedText: `
+    Languages and frameworks: Java, JavaScript; NodeJS, CSS, HTML5, AngularJS. 
+    Database: PL/SQL Oracle. 
+    Versioning: Git and GitHub.`,
+  },
+  {
+    title: "2019",
+    cardTitle: "Philips Clinical Informatics",
+    url: "https://www.linkedin.com/company/philips/",
+    cardSubtitle:"Entry Level Developer",
+    cardDetailedText: `
+    Languages and frameworks: Java, JavaScript; NodeJS, CSS, HTML5, AngularJS. 
+    Database: PL/SQL Oracle. 
+    Versioning: Git and GitHub.`,
+  },
+  {
+    title: "2018",
+    cardTitle: "KPEyes | Data Empowerment",
+    url: "https://www.linkedin.com/company/kpeyes/",
+    cardSubtitle:"Junior Developer",
+    cardDetailedText: `
+    Languages and frameworks: JavaScript; NodeJS, CSS3, HTML5, Angular 2+. 
+    Database: MySQL. 
+    Versioning: Git and GitHub.`,
   },
 ];
