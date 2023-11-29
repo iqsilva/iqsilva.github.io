@@ -1,14 +1,17 @@
 import React from "react";
 import { Chrono } from "react-chrono";
+import { useTranslation } from "react-i18next";
 import { experiences } from "../../data";
 
 const Timeline = () => {
+  const {t} = useTranslation();
+
   return (
-    <div className="timeline">
+    <div id="timeline" className="timeline">
         <div className="timeline_texts">
-        <h1 className="timeline_title">Experiences</h1>
+        <h1 className="timeline_title">{t("timeline_title")}</h1>
         <p className="timeline_desc">
-          Go to my LinkedIn to see the details of each past professional experience.
+          {t("timeline_description")}
         </p>
       </div>
         <Chrono

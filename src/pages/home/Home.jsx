@@ -1,8 +1,11 @@
 import React from "react";
 import Avatar from "../../assets/avatar.png";
 import Typewriter from "../../components/typewriter/Typewriter";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const {t} = useTranslation();
+
   return (
     <div id="home" className="home">
       <div className="home_left">
@@ -12,9 +15,9 @@ const Home = () => {
       <div className="home_right">
         <div className="home_right_wrapper">
           <h1 className="home_title">Igor Silva</h1>
-          <h2 className="home_intro"><Typewriter text="Software Developer" delay={200} infinite /></h2>
+          <h2 className="home_intro"><Typewriter text={`${t("home_intro")}`} delay={200} infinite /></h2>
           <p className="home_desc">
-            Based in São Paulo, Brazil and loves to create things for the web.
+            {t("home_description")}
           </p> 
           <ul className="home_list">
             <li className="home_list_item">

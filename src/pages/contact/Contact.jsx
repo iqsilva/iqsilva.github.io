@@ -3,8 +3,11 @@ import emailjs from "@emailjs/browser";
 import Loader from "../../components/loader/Loader";
 import Alert from "../../components/alert/Alert";
 import EmailImage from "../../assets/email.png";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const {t} = useTranslation();
+
   const nameRef = useRef();
   const emailRef = useRef();
   const subjectRef = useRef();
@@ -41,10 +44,9 @@ const Contact = () => {
     <div id="contact" className="contact">
       <div className="contact_left">
         <div className="contact_left_wrapper">
-        <h1 className="contact_title">Let&#39;s discuss your project</h1>
+        <h1 className="contact_title">{t("contact_title")}</h1>
         <p className="contact_desc">
-          <b>Do you have an idea?</b> Get in touch. Always available for
-          freelancing if the right project comes along me.
+          {t("contact_description")}
         </p>
         {loading ? (
           <Loader/>
@@ -53,28 +55,28 @@ const Contact = () => {
             <input
               ref={nameRef}
               type="text"
-              placeholder="Name"
+              placeholder={`${t("contact_name")}`}
               name="user_name"
             />
             <input
               ref={subjectRef}
               type="text"
-              placeholder="Subject"
+              placeholder={`${t("contact_subject")}`}
               name="user_subject"
             />
             <input
               ref={emailRef}
               type="text"
-              placeholder="Email"
+              placeholder={`${t("contact_email")}`}
               name="user_email"
             />
             <textarea
               ref={messageRef}
               rows="5"
-              placeholder="Message"
+              placeholder={`${t("contact_message")}`}
               name="message"
             />
-            <button>Submit</button>
+            <button>{t("contact_button")}</button>
             {alert == 1 && <Alert type="success" message="Thanks for your contact"/>}
             {alert == 2 && <Alert type="error" message="Something went wrong"/>}
           </form>

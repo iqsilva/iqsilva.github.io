@@ -1,0 +1,68 @@
+{
+    "navbar_home": "Home",
+    "navbar_about": "About",
+    "navbar_projects": "Projects",
+    "navbar_skills": "Skills",
+    "navbar_timeline": "Experience",
+    "navbar_contact": "Contact",
+    "home_intro": 
+        "Software Engineer",
+    "home_description": 
+        "Based in São Paulo, Brazil and loves to create things for the web.",
+    "about_title": "About",
+    "about_description_1": 
+        "Software Developer with five years of experience in developing web and mobile applications for various clients, especially in the healthcare sector.",
+    "about_description_2": 
+        "Passionate about creating solutions that empower users and improve their lives. Always eager to learn new technologies and frameworks.",
+    "about_description_3": 
+        "Searching for opportunities to apply the skills and experience to challenging and meaningful projects.",
+    "about_button": 
+        "Download CV",
+    "productList_title": "Some of my Projects",
+    "productList_description": "Go to my Github to get access to all the projects. Click on the project you want to know about.",
+    "skills_title": "Skills",
+    "skills_description": "Click on the button below to view my skills and click on the skill for a detailed description",
+    "hard_skills": "Hard Skills",
+    "soft_skills": "Soft Skills",
+    "soft": [
+        {
+          "Effective Communication": "Ability to convey ideas clearly and concisely, both verbally and in writing."
+        },
+        {
+          "Teamwork": "Capacity to collaborate and work well in a team, contributing to a harmonious work environment."
+        },
+        {
+          "Critical Thinking": "Ability to analyze information, identify problems, and make informed decisions."
+        },
+        {
+          "Adaptability": "Flexibility to adjust to new situations, learn quickly, and handle changes."
+        },
+        {
+          "Problem Solving": "Skill in efficiently identifying and resolving problems, finding creative solutions."
+        },
+        {
+          "Time Management": "Ability to prioritize tasks, meet deadlines, and manage time effectively."
+        },
+        {
+          "Empathy": "Capacity to understand and empathize with others, demonstrating sensitivity and respect."
+        },
+        {
+          "Leadership": "Ability to inspire and motivate others, providing guidance and direction."
+        },
+        {
+          "Strategic Thinking": "Capacity to visualize the big picture, identify goals, and plan strategically."
+        },
+        {
+          "Continuous learning": "Willingness to acquire new skills, seek knowledge, and stay updated."
+        }
+      ],
+    "timeline_title": "Experiences",
+    "timeline_description": "Go to my LinkedIn to see the details of each past professional experience.",
+    "contact_title": "Let's discuss your project",
+    "contact_description": "Do you have an idea? Get in touch. Always available for freelancing if the right project comes along me.",
+    "contact_name": "Name",
+    "contact_subject": "Subject",
+    "contact_email": "E-mail",
+    "contact_message": "Message",
+    "contact_button": "Submit"
+}

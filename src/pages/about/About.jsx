@@ -1,8 +1,11 @@
 import React from "react";
 import Avatar from "../../assets/avatar-about.png";
 import CV from '../../resources/cv.pdf';
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const {t} = useTranslation();
+
   const handleDownload = () => {
     const link = document.createElement('a');
     link.download = 'Igor-Silva-CV';
@@ -13,16 +16,15 @@ const About = () => {
     <div id="about" className="about">
       <div className="about_left">
         <div className="about_left_wrapper">
-        <h1 className="about_title">About</h1>
+        <h1 className="about_title">{t("about_title")}</h1>
           <p className="about_desc">
-          <b>Software Developer</b> with five years of experience in developing <b>web</b> and <b>mobile</b> applications for various clients, especially in the <b>healthcare sector</b>.
-            <br /><br />
-            Passionate about creating solutions that <b>empower</b> users and <b>improve</b> their lives.
-            Always eager to <b>learn</b> new technologies and frameworks.
-            <br /><br />
-            Searching for <b>opportunities</b> to apply the skills and experience to <b>challenging</b> and <b>meaningful</b> projects.
+          {t("about_description_1")}
+          <br /><br />
+          {t("about_description_2")}
+          <br /><br />
+          {t("about_description_3")}
           </p>
-          <button onClick={handleDownload}>Download CV</button>
+          <button onClick={handleDownload}>{t("about_button")}</button>
         </div>
       </div>
       <div className="about_right">

@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import SkillsImage from "../../assets/skills.png";
 import { soft, hard } from "../../data";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const {t} = useTranslation();
+
   const [currentTab, setCurrentTab] = useState(true);
   const [currentArray, setCurrentArray] = useState(soft);
   const [previousArray, setPreviousArray] = useState([]);
   const [currentSkill, setCurrentSkill] = useState("");
   const [isFiltered, setFiltered] = useState(true);
-
+  
   const handleTabChange = (e) => {
     e.preventDefault();
     setCurrentTab(!currentTab);
@@ -20,7 +23,7 @@ const Skills = () => {
     setPreviousArray(currentArray);
     const filteredArray = currentArray.filter((item) => item.name == e.target.innerText.trim());
     setFiltered(!isFiltered);
-    isFiltered ? setCurrentArray(filteredArray) : setCurrentArray(previousArray)
+    isFiltered ? setCurrentArray(filteredArray) : setCurrentArray(previousArray);
     const text = currentArray.filter((item) => item.name === e.target.innerText.trim())[0].description;
     setCurrentSkill(text);
   };
@@ -32,12 +35,12 @@ const Skills = () => {
         <img src={SkillsImage} alt="Skills Image" className="skills_img" />
       </div>
       <div className="skills_right">
-        <h1 className="skills_title">My Skills</h1>
-        <p className="skills_desc">Click on the button below to view my skills and click on the skill for a detailed description</p>
+        <h1 className="skills_title">{t("skills_title")}</h1>
+        <p className="skills_desc">{t("skills_description")}</p>
         {isFiltered ? (
           <div className="skills_button_container">
-            <button className="skills_button" onClick={handleTabChange} disabled={currentTab}>Soft Skills</button>
-            <button className="skills_button" onClick={handleTabChange} disabled={!currentTab}>Hard Skills</button>
+            <button className="skills_button" onClick={handleTabChange} disabled={currentTab}>{t("soft_skills")}</button>
+            <button className="skills_button" onClick={handleTabChange} disabled={!currentTab}>{t("hard_skills")}</button>
           </div>
         ):(null)}
         <div className="skills_container">

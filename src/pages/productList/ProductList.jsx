@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import Card from "../../components/card/Card";
 import Loader from "../../components/loader/Loader";
 import { mapArray } from "../../utils/Arrays";
+import { useTranslation } from "react-i18next";
 
 const url = `https://api.github.com/users/iqsilva/repos`;
 
 const ProductList = () => {
+  const {t} = useTranslation();
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -35,10 +37,9 @@ const ProductList = () => {
   return (
     <div id="projects" className="productList">
       <div className="productList_texts">
-        <h1 className="productList_title">Some of my Projects</h1>
+        <h1 className="productList_title">{t("productList_title")}</h1>
         <p className="productList_desc">
-          Go to my Github to get access to all the projects. Click on the
-          project you want to know about.
+          {t("productList_description")}
         </p>
       </div>
       {loading ? (

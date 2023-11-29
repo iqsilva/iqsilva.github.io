@@ -10,9 +10,7 @@ describe("Home component", () => {
 
   it("renders the description", () => {
     render(<Home />);
-    const descElement = screen.getByText(
-      "Based in São Paulo, Brazil and loves to create things for the web."
-    );
+    const descElement = screen.getByText("home_description");
     expect(descElement).toBeInTheDocument();
   });
 });
