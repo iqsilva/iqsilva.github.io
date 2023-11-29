@@ -8,8 +8,7 @@ const Timeline = () => {
         <div className="timeline_texts">
         <h1 className="timeline_title">Experiences</h1>
         <p className="timeline_desc">
-          Go to my Linkedin to see the details of each experience. Click on the
-          job you want to know about.
+          Go to my LinkedIn to see the details of each past professional experience.
         </p>
       </div>
         <Chrono

@@ -77,7 +77,7 @@ export const experiences = [
     title: "2021",
     cardTitle: "Philips Clinical Informatics",
     url: "https://www.linkedin.com/company/philips/",
-    cardSubtitle:"Entry Level Developer",
+    cardSubtitle:"Experienced Level Developer",
     cardDetailedText: `
     Languages and frameworks: Java, JavaScript; NodeJS, CSS, HTML5, AngularJS. 
     Database: PL/SQL Oracle. 

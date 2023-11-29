@@ -436,7 +436,7 @@ button {
 @media (max-width: 480px) {
   .timeline {
     flex-direction: column;
-    height: 120vh;
+    height: 125vh;
   }
 }
 @media (max-width: 480px) {
