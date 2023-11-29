@@ -1,0 +1,68 @@
+{
+    "navbar_home": "Início",
+    "navbar_about": "Sobre",
+    "navbar_projects": "Projetos",
+    "navbar_skills": "Habilidades",
+    "navbar_timeline": "Experiência",
+    "navbar_contact": "Contato",
+    "home_intro": 
+        "Engenheiro de Software",
+    "home_description": 
+        "Baseado em São Paulo, Brasil e apaixonado por desenvolvimento web.",
+    "about_title": "Sobre",
+    "about_description_1": 
+        "Desenvolvedor de Software com cinco anos de experiência no desenvolvimento de aplicativos web e móveis para vários clientes, especialmente no setor da saúde.",
+    "about_description_2": 
+        "Apaixonado por criar soluções que capacitem os usuários e melhorem suas vidas. Facilidade de trabalhar em equipe e aprender com os outros. Sempre ansioso para aprender novas tecnologias e frameworks.",
+    "about_description_3": 
+        "Buscando oportunidades de aplicar as habilidades e experiência em projetos desafiadores e significativos.",
+    "about_button": 
+        "Baixar CV",
+    "productList_title": "Meus Projetos",
+    "productList_description": "Acesse o meu Github para visualizar todos os projetos. Clique no projeto sobre o qual você deseja saber mais.",
+    "skills_title": "Habilidades",
+    "skills_description": "Clique no botão abaixo para ver minhas habilidades e clique na habilidade para obter uma descrição detalhada.",
+    "hard_skills": "Comportamentais",
+    "soft_skills": "Técnicas",
+    "soft": [
+        {
+          "Effective Communication": "Ability to convey ideas clearly and concisely, both verbally and in writing."
+        },
+        {
+          "Teamwork": "Capacity to collaborate and work well in a team, contributing to a harmonious work environment."
+        },
+        {
+          "Critical Thinking": "Ability to analyze information, identify problems, and make informed decisions."
+        },
+        {
+          "Adaptability": "Flexibility to adjust to new situations, learn quickly, and handle changes."
+        },
+        {
+          "Problem Solving": "Skill in efficiently identifying and resolving problems, finding creative solutions."
+        },
+        {
+          "Time Management": "Ability to prioritize tasks, meet deadlines, and manage time effectively."
+        },
+        {
+          "Empathy": "Capacity to understand and empathize with others, demonstrating sensitivity and respect."
+        },
+        {
+          "Leadership": "Ability to inspire and motivate others, providing guidance and direction."
+        },
+        {
+          "Strategic Thinking": "Capacity to visualize the big picture, identify goals, and plan strategically."
+        },
+        {
+          "Continuous learning": "Willingness to acquire new skills, seek knowledge, and stay updated."
+        }
+      ],
+    "timeline_title": "Experiências",
+    "timeline_description": "Acesse meu LinkedIn para ver os detalhes de cada experiência profissional anterior.",
+    "contact_title": "Vamos trabalhar juntos!",
+    "contact_description": "Tem uma idéia? Entre em contato. Disponível para freelance se o projeto ideal surgir.",
+    "contact_name": "Nome",
+    "contact_subject": "Assunto",
+    "contact_email": "E-mail",
+    "contact_message": "Mensagem",
+    "contact_button": "Enviar"
+}

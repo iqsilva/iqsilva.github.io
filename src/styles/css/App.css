@@ -596,6 +596,21 @@ button {
   margin-top: auto;
   padding: 8px;
 }
+.footer_button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  width: 8%;
+}
+.footer_button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.footer img {
+  width: 20px;
+  height: 20px;
+  object-fit: scale-down;
+}
 
 @keyframes spinner {
   0% {
