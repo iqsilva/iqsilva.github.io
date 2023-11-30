@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SkillsImage from "../../assets/skills.png";
+import SkillsImage from "../../assets/skills.svg";
 import { soft, hard } from "../../data";
 import { useTranslation } from "react-i18next";
 
@@ -31,7 +31,6 @@ const Skills = () => {
   return (
     <div id="skills" className="skills">
       <div className="skills_left">
-        <div className="skills_bg"></div>
         <img src={SkillsImage} alt="Skills Image" className="skills_img" />
       </div>
       <div className="skills_right">

@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "../../assets/avatar.png";
+import Avatar from "../../assets/home.svg";
 import Typewriter from "../../components/typewriter/Typewriter";
 import { useTranslation } from "react-i18next";
 
@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <div id="home" className="home">
       <div className="home_left">
-        <div className="home_bg"></div>
         <img src={Avatar} alt="Avatar" className="home_img" />
       </div>
       <div className="home_right">

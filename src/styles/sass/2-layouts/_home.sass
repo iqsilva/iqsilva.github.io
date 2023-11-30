@@ -26,10 +26,6 @@
     &_img
         @include layouts-mixins.image
 
-    &_bg 
-        clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%, 0% 50%)
-        @include layouts-mixins.bg
-
     &_title
         @include layouts-mixins.title
     
@@ -47,3 +43,6 @@
     &_list a
         color: #fff
         text-decoration: none
+
+    &_list a:hover
+        color: #9E58AA

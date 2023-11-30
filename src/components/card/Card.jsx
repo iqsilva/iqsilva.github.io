@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import backimg from "../../assets/backimg.png";
+import backimg from "../../assets/card.svg";
 
 const Card = ({ link, image }) => {
   Card.propTypes = {
@@ -18,11 +18,8 @@ const Card = ({ link, image }) => {
         <div className="card_circle"></div>
       </div>
       <a href={link} target="_blank" rel="noreferrer">
-        <img src={image} alt="" className="card_img" />
-        <img
-          src={backimg}
-          alt=""
-          className="card_imgback"
+        <img src={image} alt="GitHub Project" className="card_img" />
+        <img src={backimg} alt="Imagem ilustrativa" className="card_imgback"
         />
       </a>
     </div>
