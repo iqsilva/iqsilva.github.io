@@ -1,0 +1,46 @@
+.dropdown-menu {
+    width: auto;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+}
+
+.dropdown-menu li {
+    background: #14151d;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background: #2E3047;
+}
+
+.drop-menu {
+    display: none;
+}
+
+.menu-items {
+    display: grid;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .dropdown-menu {
+        width: auto;
+        position: relative;
+        top: 20px;
+        list-style: none;
+        text-align: start;
+    }
+
+    .dropdown-menu li {
+        background: #14151d;
+        cursor: pointer;
+    }
+
+    .dropdown-menu li:hover {
+        background: #2E3047;
+    }
+}

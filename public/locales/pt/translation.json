@@ -5,6 +5,7 @@
     "navbar_skills": "Habilidades",
     "navbar_timeline": "Experiência",
     "navbar_contact": "Contato",
+    "navbar_language": "Idioma",
     "home_intro": 
         "Engenheiro de Software",
     "home_description": 
@@ -24,38 +25,6 @@
     "skills_description": "Clique no botão abaixo para ver minhas habilidades e clique na habilidade para obter uma descrição detalhada.",
     "hard_skills": "Comportamentais",
     "soft_skills": "Técnicas",
-    "soft": [
-        {
-          "Effective Communication": "Ability to convey ideas clearly and concisely, both verbally and in writing."
-        },
-        {
-          "Teamwork": "Capacity to collaborate and work well in a team, contributing to a harmonious work environment."
-        },
-        {
-          "Critical Thinking": "Ability to analyze information, identify problems, and make informed decisions."
-        },
-        {
-          "Adaptability": "Flexibility to adjust to new situations, learn quickly, and handle changes."
-        },
-        {
-          "Problem Solving": "Skill in efficiently identifying and resolving problems, finding creative solutions."
-        },
-        {
-          "Time Management": "Ability to prioritize tasks, meet deadlines, and manage time effectively."
-        },
-        {
-          "Empathy": "Capacity to understand and empathize with others, demonstrating sensitivity and respect."
-        },
-        {
-          "Leadership": "Ability to inspire and motivate others, providing guidance and direction."
-        },
-        {
-          "Strategic Thinking": "Capacity to visualize the big picture, identify goals, and plan strategically."
-        },
-        {
-          "Continuous learning": "Willingness to acquire new skills, seek knowledge, and stay updated."
-        }
-      ],
     "timeline_title": "Experiências",
     "timeline_description": "Acesse meu LinkedIn para ver os detalhes de cada experiência profissional anterior.",
     "contact_title": "Vamos trabalhar juntos!",
