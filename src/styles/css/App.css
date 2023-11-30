@@ -30,7 +30,7 @@ input {
   background-color: transparent;
   width: 100%;
   height: 50px;
-  border: 1px solid #fff;
+  border: 1px solid #9E58AA;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
@@ -39,7 +39,7 @@ input {
 
 textarea {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #9E58AA;
   width: 100%;
   margin: 10px 0px;
   font-size: 14px;
@@ -87,7 +87,7 @@ button:hover {
 @media (max-width: 480px) {
   .home {
     flex-direction: column;
-    height: 92vh;
+    height: 100vh;
   }
 }
 .home_left {
@@ -170,7 +170,7 @@ button:hover {
 @media (max-width: 480px) {
   .about {
     flex-direction: column;
-    height: 115vh;
+    height: 120vh;
   }
 }
 .about_left {
@@ -354,7 +354,7 @@ button:hover {
   margin-top: 20px;
   margin-right: 20px;
   padding: 10px;
-  border: 1px solid #fff;
+  border: 1px solid #9E58AA;
 }
 @media (max-width: 480px) {
   .skills_list_item {
@@ -362,6 +362,7 @@ button:hover {
   }
 }
 .skills_list_item:hover {
+  border: 1px solid #fff;
   background: #9E58AA;
   color: #fff;
   cursor: pointer;
@@ -386,8 +387,8 @@ button:hover {
 }
 .skills_button {
   background: transparent;
-  color: #ccc;
-  border: 1px solid #ccc;
+  color: #fff;
+  border: 1px solid #9E58AA;
   cursor: pointer;
 }
 .skills_button:hover {
@@ -396,8 +397,8 @@ button:hover {
   border: 1px solid #fff;
 }
 .skills_button:disabled {
-  background: #fff;
-  color: #000;
+  background: #9E58AA;
+  color: #fff;
   border: 1px solid #fff;
   cursor: not-allowed;
 }
@@ -415,7 +416,7 @@ button:hover {
 @media (max-width: 480px) {
   .timeline {
     flex-direction: column;
-    height: 115vh;
+    height: 120vh;
   }
 }
 @media (max-width: 480px) {
@@ -521,7 +522,7 @@ button:hover {
   width: 30%;
   height: 40vh;
   margin: 20px 10px;
-  border: 2px solid #fff;
+  border: 2px solid #9E58AA;
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
   background-color: #14151d;
@@ -534,7 +535,7 @@ button:hover {
 }
 .card_browser {
   height: 20px;
-  background-color: #fff;
+  background-color: #9E58AA;
   display: flex;
   align-items: center;
   position: sticky;
@@ -545,7 +546,7 @@ button:hover {
   height: 6px;
   border-radius: 50%;
   margin: 3px;
-  background-color: #3C3F58;
+  background-color: #fff;
 }
 .card_img, .card_imgback {
   width: 100%;
@@ -561,7 +562,7 @@ button:hover {
 }
 
 .footer {
-  background-color: #2E3047;
+  background-color: #9E58AA;
   color: #fff;
   text-align: center;
   margin-top: auto;
@@ -601,7 +602,7 @@ button:hover {
 .loading-spinner {
   width: 50px;
   height: 50px;
-  border: 10px solid #2E3047;
+  border: 10px solid #9E58AA;
   border-top: 10px solid #fff;
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;

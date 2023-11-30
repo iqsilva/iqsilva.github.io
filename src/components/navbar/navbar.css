@@ -29,6 +29,7 @@
 
 .nav-links:hover {
     background-color: #9E58AA;
+    border: 1px solid #fff;
 }
 
 .fa-bars {
