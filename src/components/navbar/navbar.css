@@ -29,7 +29,6 @@
 
 .nav-links:hover {
     background-color: #2E3047;
-    border-radius: 5px;
 }
 
 .fa-bars {
@@ -53,7 +52,6 @@
         position: absolute;
         margin-top: 0;
         top: 0;
-        border: 2px solid #ececee;
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -62,7 +60,7 @@
 
     .nav-side-menu.start {
         background: #fff;
-        left: 0;
+        left: -42px;
         opacity: 1;
         transition: all 0.5s ease;
     }
