@@ -76,64 +76,19 @@ export const experiences = [
   {
     title: "2021",
     cardTitle: "Philips Clinical Informatics",
-    url: "https://www.linkedin.com/company/philips/",
     cardSubtitle:"Experienced Level Developer",
-    cardDetailedText: `
-    Languages and frameworks: Java, JavaScript; NodeJS, CSS, HTML5, AngularJS. 
-    Database: PL/SQL Oracle. 
-    Versioning: Git and GitHub.`,
+    cardDetailedText: `Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub.`,
   },
   {
     title: "2019",
     cardTitle: "Philips Clinical Informatics",
-    url: "https://www.linkedin.com/company/philips/",
     cardSubtitle:"Entry Level Developer",
-    cardDetailedText: `
-    Languages and frameworks: Java, JavaScript; NodeJS, CSS, HTML5, AngularJS. 
-    Database: PL/SQL Oracle. 
-    Versioning: Git and GitHub.`,
+    cardDetailedText: `Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub.`,
   },
   {
     title: "2018",
     cardTitle: "KPEyes | Data Empowerment",
-    url: "https://www.linkedin.com/company/kpeyes/",
     cardSubtitle:"Junior Developer",
-    cardDetailedText: `
-    Languages and frameworks: JavaScript; NodeJS, CSS3, HTML5, Angular 2+. 
-    Database: MySQL. 
-    Versioning: Git and GitHub.`,
-  },
-];
-
-export const experiencias = [
-  {
-    title: "2021",
-    cardTitle: "Philips Clinical Informatics",
-    url: "https://www.linkedin.com/company/philips/",
-    cardSubtitle:"Experienced Level Developer",
-    cardDetailedText: `
-    Linguagens e frameworks: Java, JavaScript; NodeJS, CSS, HTML5, AngularJS. 
-    Banco de Dados: PL/SQL Oracle. 
-    Versionamento: Git and GitHub.`,
-  },
-  {
-    title: "2019",
-    cardTitle: "Philips Clinical Informatics",
-    url: "https://www.linkedin.com/company/philips/",
-    cardSubtitle:"Entry Level Developer",
-    cardDetailedText: `
-    Linguagens e frameworks: Java, JavaScript; NodeJS, CSS, HTML5, AngularJS. 
-    Banco de Dados: PL/SQL Oracle. 
-    Versionamento: Git and GitHub.`,
-  },
-  {
-    title: "2018",
-    cardTitle: "KPEyes | Data Empowerment",
-    url: "https://www.linkedin.com/company/kpeyes/",
-    cardSubtitle:"Junior Developer",
-    cardDetailedText: `
-    Linguagens e frameworks: JavaScript; NodeJS, CSS3, HTML5, Angular 2+. 
-    Banco de Dados: MySQL. 
-    Versionamento: Git and GitHub.`,
+    cardDetailedText: `JavaScript, NodeJS, CSS3, HTML5, Angular 2+, MySQL, Git, GitHub.`,
   },
 ];

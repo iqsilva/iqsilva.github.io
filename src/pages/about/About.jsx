@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "../../assets/avatar-about.png";
+import Avatar from "../../assets/about.svg";
 import CV from '../../resources/cv.pdf';
 import { useTranslation } from "react-i18next";
 
@@ -28,7 +28,6 @@ const About = () => {
         </div>
       </div>
       <div className="about_right">
-        <div className="about_bg"></div>
           <img src={Avatar} alt="Avatar" className="about_img" />
       </div>
     </div>

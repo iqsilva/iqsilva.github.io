@@ -43,11 +43,14 @@ textarea
 
 button
     width: 25%
-    border: none
+    border: 1px solid variables.$tertiary-color
     padding: 15px
-    background-color: variables.$primary-color
-    color: variables.$secondary-color
+    background-color: variables.$tertiary-color
+    color: variables.$primary-color
     font-weight: 500
     cursor: pointer
     @include base-mixins.mobile
         width: 50%
+
+button:hover
+        border: 1px solid variables.$primary-color

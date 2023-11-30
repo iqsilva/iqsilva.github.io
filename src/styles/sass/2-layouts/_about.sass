@@ -3,7 +3,7 @@
 @use '../2-layouts/layouts-mixins'
 
 .about
-    @include layouts-mixins.page(100vh, 105vh)
+    @include layouts-mixins.page(100vh, 115vh)
 
     &_left
         @include layouts-mixins.text-section
@@ -16,10 +16,6 @@
 
     &_img
         @include layouts-mixins.image
-
-    &_bg
-        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%)
-        @include layouts-mixins.bg
 
     &_title
         @include layouts-mixins.title

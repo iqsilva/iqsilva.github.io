@@ -2,7 +2,7 @@
 @use '../1-base/variables'
 @use '../2-layouts/layouts-mixins'
 .contact
-    @include layouts-mixins.page(120vh, 130vh)
+    @include layouts-mixins.page(120vh, 150vh)
 
     &_right
         @include layouts-mixins.image-section
@@ -21,10 +21,6 @@
 
     &_img
         @include layouts-mixins.image
-
-    &_bg
-        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%)
-        @include layouts-mixins.bg
 
 form
     @include base-mixins.mobile

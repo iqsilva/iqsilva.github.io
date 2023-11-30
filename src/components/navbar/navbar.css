@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     background-color: #14151d;
-    color: #fff;
+    color: #9E58AA;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -28,7 +28,7 @@
 }
 
 .nav-links:hover {
-    background-color: #2E3047;
+    background-color: #9E58AA;
 }
 
 .fa-bars {
@@ -59,7 +59,7 @@
     }
 
     .nav-side-menu.start {
-        background: #fff;
+        background: #14151d;
         left: -42px;
         opacity: 1;
         transition: all 0.5s ease;
@@ -69,13 +69,13 @@
         text-align: center;
         padding: 1.5rem;
         width: 100%;
-        color: #000;
+        color: #fff;
         display: table;
         transition: 0s;
     }
 
     .nav-links:hover {
-        background-color: #14151d;
+        background-color: #9E58AA;
         color: #fff;
     }
 

@@ -17,11 +17,14 @@ const Timeline = () => {
         <Chrono
             items={experiences}
             theme={{
-                primary: '#fff',
-                secondary: '#14151d',
-                cardBgColor: '#fff',
+                primary: '#9E58AA',
+                secondary: '#fff',
+                cardBgColor: '#9E58AA',
+                cardDetailsColor: '#fff',
+                cardSubtitleColor: '#fff',
+                cardTitleColor: '#fff',
                 titleColor: '#fff',
-                titleColorActive: '#fff',
+                titleColorActive: '#14151d',
             }}
             mode="VERTICAL_ALTERNATING"
             scrollable={{ scrollbar: false }}

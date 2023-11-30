@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Loader from "../../components/loader/Loader";
 import Alert from "../../components/alert/Alert";
-import EmailImage from "../../assets/email.png";
+import EmailImage from "../../assets/contact.svg";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
@@ -84,7 +84,6 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact_right">
-        <div className="contact_bg"></div>
         <img src={EmailImage} alt="Email Image" className="contact_img" />
       </div>
     </div>
