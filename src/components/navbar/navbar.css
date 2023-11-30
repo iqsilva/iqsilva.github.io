@@ -1,93 +1,101 @@
-.active{
-    border-bottom: 2px solid #fff;
-}
-
-nav {
+.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #2E3047;
+    background-color: #14151d;
     color: #fff;
     position: sticky;
     top: 0;
     z-index: 999;
 }
 
-nav .brand {
-    font-size: 1.5rem;
-    margin: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    margin-right: auto;
-}
-
-nav ul {
+.nav-side-menu {
     display: flex;
 }
 
-nav ul li {
-   list-style: none; 
+.nav-items {
+    display: flex;
+    align-items: center;
+    height: 80px;
 }
 
-nav ul li a {
-    display: block;
+.nav-links {
+    color: white;
     text-decoration: none;
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+}
+
+.nav-links:hover {
+    background-color: #2E3047;
+    border-radius: 5px;
+}
+
+.fa-bars {
     color: #fff;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
 }
 
-nav ul li a:not(.active):hover {
-    border-bottom: 2px solid #fff;
-}
-
-nav .menu {
+.nav-links-button {
     display: none;
-    position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
 }
 
-nav .menu span {
-    height: 0.4rem;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 0.2rem;
+.menu-icon {
+    display: none;
 }
 
-
-@media (max-width: 480px) {
-    nav .menu {
+@media screen and (max-width: 1000px) {
+    .nav-side-menu {
         display: flex;
-    }
-
-    nav {
         flex-direction: column;
-        align-items: flex-end;
+        width: 250px;
+        height: 100vh;
+        position: absolute;
+        margin-top: 0;
+        top: 0;
+        border: 2px solid #ececee;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        justify-content: flex-start;
     }
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 0.25rem;
+    .nav-side-menu.start {
+        background: #fff;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
     }
 
-    nav ul.open {
-        display: flex;
-    }
-
-    nav ul li {
-        width: 100%;
+    .nav-links {
         text-align: center;
+        padding: 1.5rem;
+        width: 100%;
+        color: #000;
+        display: table;
+        transition: 0s;
     }
 
-    nav ul li a {
-        margin: 0.2rem 0.5rem;
+    .nav-links:hover {
+        background-color: #14151d;
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-items {
+        height: auto;
     }
 }

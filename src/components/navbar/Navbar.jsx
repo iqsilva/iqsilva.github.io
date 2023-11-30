@@ -1,43 +1,51 @@
-import React, { useState } from "react";
-import "./navbar.css";
+import React, { useState } from 'react'
+import Dropdown from '../dropdown/Dropdown'
+import './navbar.css'
 import { useTranslation } from "react-i18next";
-
+  
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const {t} = useTranslation();
+    const { t } = useTranslation();
+    const [click, setClick] = useState(false)
+    const [dropdown, setDropdown] = useState(false)
+    const changeClick = () => setClick(!click)
+    const closeMobileMenu = () => setClick(false)
 
-  return (
-    <nav>
-      <div className="brand">
-        <p>Igor&#39;s Portfolio</p>
-      </div>
-      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul className={menuOpen ? "open" : ""}>
-        <li>
-          <a href="#home"  onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-home"></i> {t("navbar_home")}</a>
-        </li>
-        <li>
-          <a href="#about" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-user"></i> {t("navbar_about")}</a>
-        </li>
-        <li>
-          <a href="#projects" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-folder-open"></i> {t("navbar_projects")}</a>
-        </li>
-        <li>
-          <a href="#skills" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-code"></i> {t("navbar_skills")}</a>
-        </li>
-        <li>
-          <a href="#timeline" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-briefcase"></i> {t("navbar_timeline")}</a>
-        </li>
-        <li>
-          <a href="#contact" onClick={() => setMenuOpen(!menuOpen)}><i className="fa fa-envelope"></i> {t("navbar_contact")}</a>
-        </li>
-      </ul>
-    </nav>
-  );
+    const onMouseEnter = () => {
+        setDropdown(!dropdown);
+    }
+
+return (
+        <nav className="navbar">
+          <div className="menu-icon" onClick={changeClick}>
+              <i className={click ? 'fa fa-times' : 'fa fa-bars'} ></i>
+          </div>
+          <ul className={click ? 'nav-side-menu start' : 'nav-side-menu'}>
+              <li className='nav-items'>
+                <a href="#home" className='nav-links' onClick={closeMobileMenu}><i className="fa fa-home"></i>&nbsp;{t("navbar_home")}</a>
+              </li>
+              <li className='nav-items'>
+                <a href="#about" className='nav-links' onClick={closeMobileMenu}><i className="fa fa-user"></i>&nbsp;{t("navbar_about")}</a>
+              </li>
+              <li className='nav-items'>
+                <a href="#projects" className='nav-links' onClick={closeMobileMenu}><i className="fa fa-folder-open"></i>&nbsp;{t("navbar_projects")}</a>
+              </li>
+              <li className='nav-items'>
+                <a href="#skills" className='nav-links' onClick={closeMobileMenu}><i className="fa fa-code"></i>&nbsp;{t("navbar_skills")}</a>
+              </li>
+              <li className='nav-items'>
+                <a href="#timeline" className='nav-links' onClick={closeMobileMenu}><i className="fa fa-briefcase"></i>&nbsp;{t("navbar_timeline")}</a>
+              </li>
+              <li className='nav-items'>
+                <a href="#contact" className='nav-links' onClick={closeMobileMenu}><i className="fa fa-envelope"></i>&nbsp;{t("navbar_contact")}</a>
+              </li>
+              <li className='nav-items'>
+                  <a className='nav-links' onClick={onMouseEnter}><i className='fa fa-language' />&nbsp;{t("navbar_language")}
+                    {dropdown && <Dropdown/>}
+                  </a>
+              </li>
+          </ul>
+        </nav>
+    );
 };
-
+  
 export default Navbar;
