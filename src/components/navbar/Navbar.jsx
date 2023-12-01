@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Dropdown from '../dropdown/Dropdown'
-import './navbar.css'
 import { useTranslation } from "react-i18next";
   
 const Navbar = () => {

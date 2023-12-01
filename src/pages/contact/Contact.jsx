@@ -77,8 +77,8 @@ const Contact = () => {
               name="message"
             />
             <button>{t("contact_button")}</button>
-            {alert == 1 && <Alert type="success" message="Thanks for your contact"/>}
-            {alert == 2 && <Alert type="error" message="Something went wrong"/>}
+            {alert == 1 && <Alert type="success" message={`${t("success")}`}/>}
+            {alert == 2 && <Alert type="error" message={`${t("error")}`}/>}
           </form>
         )}
         </div>

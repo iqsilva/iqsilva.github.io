@@ -3,7 +3,6 @@ import SkillsImage from "../../assets/skills.svg";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 
-
 const Skills = ({language}) => {
   Skills.propTypes = {
     language: PropTypes.string.isRequired
