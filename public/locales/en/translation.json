@@ -1,129 +1,141 @@
 {
-    "navbar_home": "Home",
-    "navbar_about": "About",
-    "navbar_projects": "Projects",
-    "navbar_skills": "Skills",
-    "navbar_timeline": "Experience",
-    "navbar_contact": "Contact",
-    "navbar_language": "Language",
-    "home_intro": 
-        "Software Engineer",
-    "home_description": 
-        "Based in São Paulo, Brazil and loves to create things for the web.",
-    "about_title": "About",
-    "about_description_1": 
-        "Software Developer with five years of experience in developing web and mobile applications for various clients, especially in the healthcare sector.",
-    "about_description_2": 
-        "Passionate about creating solutions that empower users and improve their lives. Always eager to learn new technologies and frameworks.",
-    "about_description_3": 
-        "Searching for opportunities to apply the skills and experience to challenging and meaningful projects.",
-    "about_button": 
-        "Download CV",
-    "productList_title": "Some of my Projects",
-    "productList_description": "Go to my Github to get access to all the projects. Click on the project you want to know about.",
-    "skills_title": "Skills",
-    "skills_description": "Click on the button below to view my skills and click on the skill for a detailed description",
-    "hard_skills": "Hard Skills",
-    "soft_skills": "Soft Skills",
-    "timeline_title": "Experiences",
-    "timeline_description": "Go to my LinkedIn to see the details of each past professional experience.",
-    "contact_title": "Let's discuss your project",
-    "contact_description": "Do you have an idea? Get in touch. Always available for freelancing if the right project comes along me.",
-    "contact_name": "Name",
-    "contact_subject": "Subject",
-    "contact_email": "E-mail",
-    "contact_message": "Message",
-    "contact_button": "Submit",
-    "soft":[
-      {
-        "name": "Effective Communication",
-        "description": "Ability to convey ideas clearly and concisely, both verbally and in writing."
-      },
-      {
-        "name": "Teamwork",
-        "description": "Capacity to collaborate and work well in a team, contributing to a harmonious work environment."
-      },
-      {
-        "name": "Critical Thinking",
-        "description": "Ability to analyze information, identify problems, and make informed decisions."
-      },
-      {
-        "name": "Adaptability",
-        "description": "Flexibility to adjust to new situations, learn quickly, and handle changes."
-      },
-      {
-        "name": "Problem Solving",
-        "description": "Skill in efficiently identifying and resolving problems, finding creative solutions."
-      },
-      {
-        "name": "Time Management",
-        "description": "Ability to prioritize tasks, meet deadlines, and manage time effectively."
-      },
-      {
-        "name": "Empathy",
-        "description": "Capacity to understand and empathize with others, demonstrating sensitivity and respect."
-      },
-      {
-        "name": "Leadership",
-        "description": "Ability to inspire and motivate others, providing guidance and direction."
-      },
-      {
-        "name": "Strategic Thinking",
-        "description": "Capacity to visualize the big picture, identify goals, and plan strategically."
-      },
-      {
-        "name": "Continuous learning",
-        "description": "Willingness to acquire new skills, seek knowledge, and stay updated."
-      }
-    ],
-    "hard": [
-      {
-        "name": "Programming Languages",
-        "description": "Proficiency in at least one programming language, such as JavaScript, TypeScript, among others."
-      },
-      {
-        "name": "Algorithms and Data Structures",
-        "description": "Understanding and efficient implementation of fundamental algorithms and data structures, such as lists, stacks, queues, trees, graphs, etc."
-      },
-      {
-        "name": "Web Development",
-        "description": "Knowledge of HTML, CSS, as well as experience with popular frameworks and libraries like React."
-      },
-      {
-        "name": "Database Management",
-        "description": "Skills in designing and managing databases, such as MySQL, MongoDB, or Oracle, and knowledge of query languages like SQL."
-      },
-      {
-        "name": "Debugging and Testing",
-        "description": "Ability to identify and fix bugs in code, as well as perform unit testing and integration testing to ensure software quality."
-      },
-      {
-        "name": "Version Control",
-        "description": "Familiarity with version control systems like Git, and knowledge of branching, merging, and conflict resolution."
-      },
-      {
-        "name": "Mobile Development",
-        "description": "Experience in developing mobile applications, using cross-platform frameworks like React Native."
-      }
-    ],
-    "experiences": [
-      {
-        "title": "2021",
-        "cardTitle": "Philips Clinical Informatics",
-        "cardSubtitle": "Experienced Level Developer",
-        "cardDetailedText": "Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub."
-      },
-      {
-        "title": "2019",
-        "cardTitle": "Philips Clinical Informatics",
-        "cardSubtitle":"Entry Level Developer",
-        "cardDetailedText": "Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub."
-      },
-      {
-        "title": "2018",
-        "cardTitle": "KPEyes | Data Empowerment",
-        "cardSubtitle":"Junior Developer",
-      "cardDetailedText": "JavaScript, NodeJS, CSS3, HTML5, Angular 2+, MySQL, Git, GitHub."
-      }
-    ]
+  "navbar_home": "Home",
+  "navbar_about": "About",
+  "navbar_projects": "Projects",
+  "navbar_skills": "Skills",
+  "navbar_timeline": "Experience",
+  "navbar_contact": "Contact",
+  "navbar_language": "Language",
+  "home_intro": 
+      "Software Engineer",
+  "home_description": 
+      "Based in São Paulo, Brazil and loves to create things for the web.",
+  "about_title": "About",
+  "about_description_1": 
+      "Software Developer with five years of experience in developing web and mobile applications for various clients, especially in the healthcare sector.",
+  "about_description_2": 
+      "Passionate about creating solutions that empower users and improve their lives. Always eager to learn new technologies and frameworks.",
+  "about_description_3": 
+      "Searching for opportunities to apply the skills and experience to challenging and meaningful projects.",
+  "about_button": 
+      "Download CV",
+  "productList_title": "Some of my Projects",
+  "productList_description": "Go to my Github to get access to all the projects. Click on the project you want to know about.",
+  "skills_title": "Skills",
+  "skills_description": "Click on the button below to view my skills and click on the skill for a detailed description",
+  "hard_skills": "Hard Skills",
+  "soft_skills": "Soft Skills",
+  "timeline_title": "Experiences",
+  "timeline_description": "Go to my LinkedIn to see the details of each past professional experience.",
+  "contact_title": "Let's discuss your project",
+  "contact_description": "Do you have an idea? Get in touch. Always available for freelancing if the right project comes along me.",
+  "contact_name": "Name",
+  "contact_subject": "Subject",
+  "contact_email": "E-mail",
+  "contact_message": "Message",
+  "contact_button": "Submit",
+  "soft":[
+    {
+      "name": "Effective Communication",
+      "description": "Ability to convey ideas clearly and concisely, both verbally and in writing."
+    },
+    {
+      "name": "Teamwork",
+      "description": "Capacity to collaborate and work well in a team, contributing to a harmonious work environment."
+    },
+    {
+      "name": "Critical Thinking",
+      "description": "Ability to analyze information, identify problems, and make informed decisions."
+    },
+    {
+      "name": "Adaptability",
+      "description": "Flexibility to adjust to new situations, learn quickly, and handle changes."
+    },
+    {
+      "name": "Problem Solving",
+      "description": "Skill in efficiently identifying and resolving problems, finding creative solutions."
+    },
+    {
+      "name": "Time Management",
+      "description": "Ability to prioritize tasks, meet deadlines, and manage time effectively."
+    },
+    {
+      "name": "Empathy",
+      "description": "Capacity to understand and empathize with others, demonstrating sensitivity and respect."
+    },
+    {
+      "name": "Leadership",
+      "description": "Ability to inspire and motivate others, providing guidance and direction."
+    },
+    {
+      "name": "Strategic Thinking",
+      "description": "Capacity to visualize the big picture, identify goals, and plan strategically."
+    },
+    {
+      "name": "Continuous learning",
+      "description": "Willingness to acquire new skills, seek knowledge, and stay updated."
+    }
+  ],
+  "hard": [
+    {
+      "name": "Programming Languages",
+      "description": "Proficiency in at least one programming language, such as JavaScript, TypeScript, among others."
+    },
+    {
+      "name": "Algorithms and Data Structures",
+      "description": "Understanding and efficient implementation of fundamental algorithms and data structures, such as lists, stacks, queues, trees, graphs, etc."
+    },
+    {
+      "name": "Web Development",
+      "description": "Knowledge of HTML, CSS, as well as experience with popular frameworks and libraries like React."
+    },
+    {
+      "name": "Database Management",
+      "description": "Skills in designing and managing databases, such as MySQL, MongoDB, or Oracle, and knowledge of query languages like SQL."
+    },
+    {
+      "name": "Debugging and Testing",
+      "description": "Ability to identify and fix bugs in code, as well as perform unit testing and integration testing to ensure software quality."
+    },
+    {
+      "name": "Version Control",
+      "description": "Familiarity with version control systems like Git, and knowledge of branching, merging, and conflict resolution."
+    },
+    {
+      "name": "Mobile Development",
+      "description": "Experience in developing mobile applications, using cross-platform frameworks like React Native."
+    }
+  ],
+  "experiences": [
+    {
+      "title": "2021",
+      "cardTitle": "Philips Clinical Informatics",
+      "cardSubtitle": "Experienced Level Developer",
+      "cardDetailedText": "Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub."
+    },
+    {
+      "title": "2019",
+      "cardTitle": "Philips Clinical Informatics",
+      "cardSubtitle":"Entry Level Developer",
+      "cardDetailedText": "Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub."
+    },
+    {
+      "title": "2018",
+      "cardTitle": "KPEyes | Data Empowerment",
+      "cardSubtitle":"Junior Developer",
+    "cardDetailedText": "JavaScript, NodeJS, CSS3, HTML5, Angular 2+, MySQL, Git, GitHub."
+    }
+  ],
+  "success": "Message sent successfully!",
+  "error": "Error sending message!",
+  "dropdown":[
+    {
+      "title": "Portuguese",
+      "value": "pt"
+    },
+    {
+      "title": "English",
+      "value": "en"
+    }
+  ]
 }

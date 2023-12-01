@@ -1,129 +1,141 @@
 {
-    "navbar_home": "Início",
-    "navbar_about": "Sobre",
-    "navbar_projects": "Projetos",
-    "navbar_skills": "Habilidades",
-    "navbar_timeline": "Experiência",
-    "navbar_contact": "Contato",
-    "navbar_language": "Idioma",
-    "home_intro": 
-        "Engenheiro de Software",
-    "home_description": 
-        "Baseado em São Paulo, Brasil e apaixonado por desenvolvimento web.",
-    "about_title": "Sobre",
-    "about_description_1": 
-        "Desenvolvedor de Software com cinco anos de experiência no desenvolvimento de aplicativos web e móveis para vários clientes, especialmente no setor da saúde.",
-    "about_description_2": 
-        "Apaixonado por criar soluções que capacitem os usuários e melhorem suas vidas. Facilidade de trabalhar em equipe e aprender com os outros. Sempre ansioso para aprender novas tecnologias e frameworks.",
-    "about_description_3": 
-        "Buscando oportunidades de aplicar as habilidades e experiência em projetos desafiadores e significativos.",
-    "about_button": 
-        "Baixar CV",
-    "productList_title": "Meus Projetos",
-    "productList_description": "Acesse o meu Github para visualizar todos os projetos. Clique no projeto sobre o qual você deseja saber mais.",
-    "skills_title": "Habilidades",
-    "skills_description": "Clique no botão abaixo para ver minhas habilidades e clique na habilidade para obter uma descrição detalhada.",
-    "hard_skills": "Técnicas",
-    "soft_skills": "Comportamentais",
-    "timeline_title": "Experiências",
-    "timeline_description": "Acesse meu LinkedIn para ver os detalhes de cada experiência profissional anterior.",
-    "contact_title": "Vamos trabalhar juntos!",
-    "contact_description": "Tem uma idéia? Entre em contato. Disponível para freelance se o projeto ideal surgir.",
-    "contact_name": "Nome",
-    "contact_subject": "Assunto",
-    "contact_email": "E-mail",
-    "contact_message": "Mensagem",
-    "contact_button": "Enviar",
-    "soft":[
-      {
-        "name": "Comunicação Efetiva",
-        "description": "Habilidade de transmitir ideias de forma clara e concisa, tanto verbalmente quanto por escrito."
-      },
-      {
-        "name": "Trabalho em Equipe",
-        "description": "Capacidade de colaborar e trabalhar bem em equipe, contribuindo para um ambiente de trabalho harmonioso."
-      },
-      {
-        "name": "Pensamento Crítico",
-        "description": "Capacidade de analisar informações, identificar problemas e tomar decisões fundamentadas."
-      },
-      {
-        "name": "Adaptabilidade",
-        "description": "Flexibilidade para se ajustar a novas situações, aprender rapidamente e lidar com mudanças."
-      },
-      {
-        "name": "Resolução de Problemas",
-        "description": "Habilidade para identificar e resolver problemas com eficiência, encontrando soluções criativas."
-      },
-      {
-        "name": "Gerenciamento de Tempo",
-        "description": "Capacidade de priorizar tarefas, cumprir prazos e gerenciar o tempo de forma eficaz."
-      },
-      {
-        "name": "Empatia",
-        "description": "Capacidade de entender e ter empatia pelos outros, demonstrando sensibilidade e respeito."
-      },
-      {
-        "name": "Liderança",
-        "description": "Capacidade de inspirar e motivar outras pessoas, fornecendo orientação e direção."
-      },
-      {
-        "name": "Pensamento Estratégico",
-        "description": "Capacidade de visualizar o panorama geral, identificar metas e planejar estrategicamente."
-      },
-      {
-        "name": "Aprendizagem Contínua",
-        "description": "Disposição para adquirir novas habilidades, buscar conhecimento e manter-se atualizado."
-      }
-    ],
-    "hard": [
-      {
-        "name": "Linguagens de Programação",
-        "description": "Proficiência em pelo menos uma linguagem de programação, como JavaScript, TypeScript, entre outras."
-      },
-      {
-        "name": "Algoritmos e Estruturas de Dados",
-        "description": "Compreensão e implementação eficiente de algoritmos e estruturas de dados fundamentais, como listas, pilhas, filas, árvores, gráficos etc."
-      },
-      {
-        "name": "Desenvolvimento Web",
-        "description": "Conhecimento de HTML e CSS, além de experiência com frameworks e bibliotecas populares, como React."
-      },
-      {
-        "name": "Gerenciamento de Banco de Dados",
-        "description": "Habilidades em projetar e gerenciar bancos de dados, como MySQL, MongoDB ou Oracle, e conhecimento de linguagens de consulta como SQL."
-      },
-      {
-        "name": "Debugar e Testar",
-        "description": "Capacidade de identificar e corrigir bugs no código, bem como realizar testes unitários e de integração para garantir a qualidade do software."
-      },
-      {
-        "name": "Controle de Versão",
-        "description": "Familiaridade com sistemas de controle de versão, como o Git, e conhecimento de branching, merging e resolução de conflitos."
-      },
-      {
-        "name": "Desenvolvimento Móvel",
-        "description": "Experiência no desenvolvimento de aplicativos móveis, usando frameworks de cross-platform, como React Native."
-      }
-    ],
-    "experiences": [
-      {
-        "title": "2021",
-        "cardTitle": "Philips Clinical Informatics",
-        "cardSubtitle": "Experienced Level Developer",
-        "cardDetailedText": "Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub."
-      },
-      {
-        "title": "2019",
-        "cardTitle": "Philips Clinical Informatics",
-        "cardSubtitle":"Entry Level Developer",
-        "cardDetailedText": "Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub."
-      },
-      {
-        "title": "2018",
-        "cardTitle": "KPEyes | Data Empowerment",
-        "cardSubtitle":"Junior Developer",
-      "cardDetailedText": "JavaScript, NodeJS, CSS3, HTML5, Angular 2+, MySQL, Git, GitHub."
-      }
-    ]
+  "navbar_home": "Início",
+  "navbar_about": "Sobre",
+  "navbar_projects": "Projetos",
+  "navbar_skills": "Habilidades",
+  "navbar_timeline": "Experiência",
+  "navbar_contact": "Contato",
+  "navbar_language": "Idioma",
+  "home_intro": 
+      "Engenheiro de Software",
+  "home_description": 
+      "Baseado em São Paulo, Brasil e apaixonado por desenvolvimento web.",
+  "about_title": "Sobre",
+  "about_description_1": 
+      "Desenvolvedor de Software com cinco anos de experiência no desenvolvimento de aplicativos web e móveis para vários clientes, especialmente no setor da saúde.",
+  "about_description_2": 
+      "Apaixonado por criar soluções que capacitem os usuários e melhorem suas vidas. Facilidade de trabalhar em equipe e aprender com os outros. Sempre ansioso para aprender novas tecnologias e frameworks.",
+  "about_description_3": 
+      "Buscando oportunidades de aplicar as habilidades e experiência em projetos desafiadores e significativos.",
+  "about_button": 
+      "Baixar CV",
+  "productList_title": "Meus Projetos",
+  "productList_description": "Acesse o meu Github para visualizar todos os projetos. Clique no projeto sobre o qual você deseja saber mais.",
+  "skills_title": "Habilidades",
+  "skills_description": "Clique no botão abaixo para ver minhas habilidades e clique na habilidade para obter uma descrição detalhada.",
+  "hard_skills": "Técnicas",
+  "soft_skills": "Comportamentais",
+  "timeline_title": "Experiências",
+  "timeline_description": "Acesse meu LinkedIn para ver os detalhes de cada experiência profissional anterior.",
+  "contact_title": "Vamos trabalhar juntos!",
+  "contact_description": "Tem uma idéia? Entre em contato. Disponível para freelance se o projeto ideal surgir.",
+  "contact_name": "Nome",
+  "contact_subject": "Assunto",
+  "contact_email": "E-mail",
+  "contact_message": "Mensagem",
+  "contact_button": "Enviar",
+  "soft":[
+    {
+      "name": "Comunicação Efetiva",
+      "description": "Habilidade de transmitir ideias de forma clara e concisa, tanto verbalmente quanto por escrito."
+    },
+    {
+      "name": "Trabalho em Equipe",
+      "description": "Capacidade de colaborar e trabalhar bem em equipe, contribuindo para um ambiente de trabalho harmonioso."
+    },
+    {
+      "name": "Pensamento Crítico",
+      "description": "Capacidade de analisar informações, identificar problemas e tomar decisões fundamentadas."
+    },
+    {
+      "name": "Adaptabilidade",
+      "description": "Flexibilidade para se ajustar a novas situações, aprender rapidamente e lidar com mudanças."
+    },
+    {
+      "name": "Resolução de Problemas",
+      "description": "Habilidade para identificar e resolver problemas com eficiência, encontrando soluções criativas."
+    },
+    {
+      "name": "Gerenciamento de Tempo",
+      "description": "Capacidade de priorizar tarefas, cumprir prazos e gerenciar o tempo de forma eficaz."
+    },
+    {
+      "name": "Empatia",
+      "description": "Capacidade de entender e ter empatia pelos outros, demonstrando sensibilidade e respeito."
+    },
+    {
+      "name": "Liderança",
+      "description": "Capacidade de inspirar e motivar outras pessoas, fornecendo orientação e direção."
+    },
+    {
+      "name": "Pensamento Estratégico",
+      "description": "Capacidade de visualizar o panorama geral, identificar metas e planejar estrategicamente."
+    },
+    {
+      "name": "Aprendizagem Contínua",
+      "description": "Disposição para adquirir novas habilidades, buscar conhecimento e manter-se atualizado."
+    }
+  ],
+  "hard": [
+    {
+      "name": "Linguagens de Programação",
+      "description": "Proficiência em pelo menos uma linguagem de programação, como JavaScript, TypeScript, entre outras."
+    },
+    {
+      "name": "Algoritmos e Estruturas de Dados",
+      "description": "Compreensão e implementação eficiente de algoritmos e estruturas de dados fundamentais, como listas, pilhas, filas, árvores, gráficos etc."
+    },
+    {
+      "name": "Desenvolvimento Web",
+      "description": "Conhecimento de HTML e CSS, além de experiência com frameworks e bibliotecas populares, como React."
+    },
+    {
+      "name": "Gerenciamento de Banco de Dados",
+      "description": "Habilidades em projetar e gerenciar bancos de dados, como MySQL, MongoDB ou Oracle, e conhecimento de linguagens de consulta como SQL."
+    },
+    {
+      "name": "Debugar e Testar",
+      "description": "Capacidade de identificar e corrigir bugs no código, bem como realizar testes unitários e de integração para garantir a qualidade do software."
+    },
+    {
+      "name": "Controle de Versão",
+      "description": "Familiaridade com sistemas de controle de versão, como o Git, e conhecimento de branching, merging e resolução de conflitos."
+    },
+    {
+      "name": "Desenvolvimento Móvel",
+      "description": "Experiência no desenvolvimento de aplicativos móveis, usando frameworks de cross-platform, como React Native."
+    }
+  ],
+  "experiences": [
+    {
+      "title": "2021",
+      "cardTitle": "Philips Clinical Informatics",
+      "cardSubtitle": "Experienced Level Developer",
+      "cardDetailedText": "Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub."
+    },
+    {
+      "title": "2019",
+      "cardTitle": "Philips Clinical Informatics",
+      "cardSubtitle":"Entry Level Developer",
+      "cardDetailedText": "Java, JavaScript, NodeJS, CSS, HTML5, AngularJS, PL/SQL Oracle, Git, GitHub."
+    },
+    {
+      "title": "2018",
+      "cardTitle": "KPEyes | Data Empowerment",
+      "cardSubtitle":"Junior Developer",
+    "cardDetailedText": "JavaScript, NodeJS, CSS3, HTML5, Angular 2+, MySQL, Git, GitHub."
+    }
+  ],
+  "success": "Mensagem enviada com sucesso!",
+  "error": "Erro ao enviar a mensagem!",
+  "dropdown":[
+    {
+      "title": "Português",
+      "value": "pt"
+    },
+    {
+      "title": "Inglês",
+      "value": "en"
+    }
+  ]
 }

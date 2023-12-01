@@ -2,15 +2,6 @@
 @use '../1-base/variables'
 @use '../2-layouts/layouts-mixins'
 
-/* criando animação */
-@keyframes morph
-    0%
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
-    50%
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
-    100%
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
-
 .home
     @include layouts-mixins.page(100vh, 100vh)
 
