@@ -4,7 +4,7 @@ import './dropdown.css'
 import { useLocale } from '../../hooks/useLocale'
   
 const Dropdown = () => {
-    const { locale, changeLanguage } = useLocale();
+    const { changeLanguage } = useLocale();
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
 
@@ -17,7 +17,6 @@ const Dropdown = () => {
             changeLanguage('pt'); 
         }
         setClick(false);
-        console.log(locale);
     };
 
     return (
