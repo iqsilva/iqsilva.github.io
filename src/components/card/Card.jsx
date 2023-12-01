@@ -12,16 +12,16 @@ const Card = ({ link, image }) => {
 
   return (
     <div className="card">
-      <div className="card_browser">
-        <div className="card_circle"></div>
-        <div className="card_circle"></div>
-        <div className="card_circle"></div>
+      <div className="card_inner">
+        <div className="card_front">
+          <img className="card_img" src={image} alt="Avatar"/>
+        </div>
+        <div className="card_back">
+        <a href={link} target="_blank" rel="noreferrer">
+          <img className="card_img" src={backimg} alt="Avatar" />
+        </a>
+        </div>
       </div>
-      <a href={link} target="_blank" rel="noreferrer">
-        <img src={image} alt="GitHub Project" className="card_img" />
-        <img src={backimg} alt="Imagem ilustrativa" className="card_imgback"
-        />
-      </a>
     </div>
   );
 };
