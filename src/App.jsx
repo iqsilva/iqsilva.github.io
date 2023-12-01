@@ -9,21 +9,21 @@ import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./styles/css/App.css";
 import './i18n'
-import { LocaleProvider } from './contexts/LocaleContext'
+import { LocaleContext } from './contexts/LocaleContext'
+import {useContext} from 'react'
 
 const App = () => {
+  const currentLanguage = useContext(LocaleContext);
   return (
     <div>
-      <LocaleProvider>
-        <Navbar/>
-        <Home/>
-        <About/>
-        <ProductList/>
-        <Skills/>
-        <Timeline/>
-        <Contact/>
-        <Footer/>
-      </LocaleProvider>
+      <Navbar/>
+      <Home/>
+      <About/>
+      <ProductList/>
+      <Skills language={currentLanguage.locale}/>
+      <Timeline/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 };

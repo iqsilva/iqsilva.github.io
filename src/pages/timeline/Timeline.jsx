@@ -1,7 +1,6 @@
 import React from "react";
 import { Chrono } from "react-chrono";
 import { useTranslation } from "react-i18next";
-import { experiences } from "../../data";
 
 const Timeline = () => {
   const {t} = useTranslation();
@@ -15,7 +14,7 @@ const Timeline = () => {
         </p>
       </div>
         <Chrono
-            items={experiences}
+            items={t("experiences", {returnObjects: true})}
             theme={{
                 primary: '#9E58AA',
                 secondary: '#fff',

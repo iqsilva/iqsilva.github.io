@@ -1,6 +1,5 @@
 import React from "react";
 import Avatar from "../../assets/home.svg";
-import Typewriter from "../../components/typewriter/Typewriter";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
@@ -14,7 +13,7 @@ const Home = () => {
       <div className="home_right">
         <div className="home_right_wrapper">
           <h1 className="home_title">Igor Silva</h1>
-          <h2 className="home_intro"><Typewriter text={`${t("home_intro")}`} delay={200} infinite /></h2>
+          <h2 className="home_intro">{t("home_intro")}</h2>
           <p className="home_desc">
             {t("home_description")}
           </p> 
