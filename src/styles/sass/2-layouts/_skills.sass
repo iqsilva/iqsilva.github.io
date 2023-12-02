@@ -3,22 +3,13 @@
 @use '../2-layouts/layouts-mixins'
  
 .skills
-    height: 77vh
-    display: flex
+    @include layouts-mixins.page(77vh, 150vh)
     align-items: center
-    background-color: variables.$bg-color
-    color: variables.$primary-color
-    @media screen AND (max-width: 480px)
-        flex-direction: column
+    @include base-mixins.mobile
         text-align: center
-        height: 150vh
 
     &_left
-        flex: 1
-        display: flex
-        align-items: center
-        justify-content: center
-        position: relative
+        @include layouts-mixins.image-section
 
     &_right
         flex: 1
@@ -31,11 +22,11 @@
             height: 100%
 
     &_container
-        padding-right: 20px
+        padding: 0 20px 0 0
         text-align: justify
         height: 100%
         @include base-mixins.mobile
-            padding-right: 0px
+            padding: 0
             height: 50%
             
     &_title
@@ -43,9 +34,8 @@
 
     &_desc
         @include layouts-mixins.desc
-        padding-right: 20px
+        padding: 0 20px 0 0
         @include base-mixins.mobile
-            padding-right: 0px
             padding: 20px
 
     &_list
@@ -62,14 +52,14 @@
             margin-top: 20px
             margin-right: 20px
             padding: 10px
-            border: 1px solid #9E58AA
+            border: 1px solid variables.$tertiary-color
             @include base-mixins.mobile
                 margin-right: 0
         
             &:hover
-                border: 1px solid #fff
-                background: #9E58AA
-                color: #fff
+                border: 1px solid variables.$primary-color
+                background: variables.$tertiary-color
+                color: variables.$primary-color
                 cursor: pointer
     
     &_selected_item
@@ -86,17 +76,17 @@
         
     &_button
         background: transparent
-        color: #fff
-        border: 1px solid #9E58AA
+        color: variables.$primary-color
+        border: 1px solid variables.$tertiary-color
         cursor: pointer
 
         &:hover
-            background: #9E58AA
-            color: #fff
-            border: 1px solid #fff
+            background: variables.$tertiary-color
+            color: variables.$primary-color
+            border: 1px solid variables.$primary-color
 
         &:disabled
-            background: #9E58AA
-            color: #fff
-            border: 1px solid #fff
+            background: variables.$tertiary-color
+            color: variables.$primary-color
+            border: 1px solid variables.$primary-color
             cursor: not-allowed

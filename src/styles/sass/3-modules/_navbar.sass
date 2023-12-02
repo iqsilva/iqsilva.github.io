@@ -1,9 +1,12 @@
+@use '../1-base/base-mixins'
+@use '../1-base/variables'
+
 .navbar
     display: flex
     justify-content: center
     align-items: center
-    background-color: #14151d
-    color: #9E58AA
+    background-color: variables.$secondary-color
+    color: variables.$tertiary-color
     position: sticky
     top: 0
     z-index: 999
@@ -11,8 +14,7 @@
 .nav-side-menu
     display: flex
     touch-action: none
-    @media screen AND (max-width: 1000px)
-        display: flex
+    @include base-mixins.mobile
         flex-direction: column
         width: 250px
         height: 100vh
@@ -25,8 +27,8 @@
         justify-content: flex-start
 
 .nav-side-menu.start
-    @media screen AND (max-width: 1000px)
-        background: #14151d
+    @include base-mixins.mobile
+        background: variables.$secondary-color
         left: -42px
         opacity: 1
         transition: all 0.5s ease
@@ -36,15 +38,15 @@
     display: flex
     align-items: center
     height: 80px
-    @media screen AND (max-width: 1000px)
+    @include base-mixins.mobile
         height: auto
 
 .nav-links
-    color: white
+    color: variables.$primary-color
     text-decoration: none
     padding: 8px 20px
     transition: all 0.3s ease-out
-    @media screen AND (max-width: 1000px)
+    @include base-mixins.mobile
         text-align: center
         padding: 1.5rem
         width: 100%
@@ -53,23 +55,23 @@
         transition: 0s
 
 .nav-links:hover
-    background-color: #9E58AA
-    border: 1px solid #fff
+    background-color: variables.$tertiary-color
+    border: 1px solid variables.$primary-color
     @media screen AND (max-width: 1000px)
         background-color: #9E58AA
-        color: #fff
+        color: variables.$primary-color
 
 .fa-bars
-    color: #fff
+    color: variables.$primary-color
 
 .fa-times
-    @media screen AND (max-width: 1000px)
-        color: #fff
+    @include base-mixins.mobile
+        color: variables.$primary-color
         font-size: 2rem
 
 .menu-icon
     display: none
-    @media screen AND (max-width: 1000px)
+    @include base-mixins.mobile
         display: block
         position: absolute
         top: 0

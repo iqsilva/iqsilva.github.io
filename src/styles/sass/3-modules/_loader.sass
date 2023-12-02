@@ -1,8 +1,11 @@
+@use '../1-base/variables'
+
 @keyframes spinner 
     0%
         transform: rotate(0deg)
     100%
         transform: rotate(360deg)
+
 .spinner-container
     display: flex
     align-items: center
@@ -12,7 +15,7 @@
 .loading-spinner
     width: 50px
     height: 50px
-    border: 10px solid #9E58AA
-    border-top: 10px solid #fff
+    border: 10px solid variables.$tertiary-color
+    border-top: 10px solid variables.$primary-color
     border-radius: 50%
     animation: spinner 1.5s linear infinite

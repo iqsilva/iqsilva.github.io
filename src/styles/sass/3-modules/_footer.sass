@@ -1,21 +1,8 @@
+@use '../1-base/variables'
+
 .footer 
-    background-color: #9E58AA
-    color: #fff
+    background-color: variables.$tertiary-color
+    color: variables.$primary-color
     text-align: center
     margin-top: auto
     padding: 8px
-
-    &_button 
-        background-color: transparent
-        color: #fff
-        font-size: 14px
-        width: 8%
-
-    &_button:disabled
-        cursor: not-allowed
-        opacity: 0.5
-    
-    img 
-        width: 20px
-        height: 20px
-        object-fit: scale-down
