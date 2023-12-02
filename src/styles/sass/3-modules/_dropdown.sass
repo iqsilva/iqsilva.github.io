@@ -1,28 +1,23 @@
+@use '../1-base/base-mixins'
+@use '../1-base/variables'
+
 .dropdown-menu
     width: auto
     position: absolute
     top: 80px
     list-style: none
     text-align: start
-    @media screen AND (max-width: 1000px)
-        width: auto
+    @include base-mixins.mobile
         position: relative
         top: 20px
-        list-style: none
-        text-align: start
 
     & li
-        background: #14151d
+        background: variables.$secondary-color
         cursor: pointer
-        @media screen AND (max-width: 1000px)
-            background: #14151d
-            cursor: pointer
 
     & li:hover 
-        background: #9E58AA
-        border: 1px solid #fff
-        @media screen AND (max-width: 1000px)
-            background: #9E58AA
+        background: variables.$tertiary-color
+        border: 1px solid variables.$primary-color
 
 .drop-menu 
     display: none
@@ -30,5 +25,5 @@
 .menu-items 
     display: grid
     text-decoration: none
-    color: #fff
+    color: variables.$primary-color
     padding: 15px

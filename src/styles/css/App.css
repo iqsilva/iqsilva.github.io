@@ -265,25 +265,29 @@ button:hover {
 }
 
 .skills {
-  height: 77vh;
   display: flex;
-  align-items: center;
+  height: 77vh;
   background-color: #14151d;
   color: #fff;
+  align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .skills {
     flex-direction: column;
-    text-align: center;
     height: 150vh;
+  }
+}
+@media (max-width: 480px) {
+  .skills {
+    text-align: center;
   }
 }
 .skills_left {
   flex: 1;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 .skills_right {
   flex: 1;
@@ -299,13 +303,13 @@ button:hover {
   }
 }
 .skills_container {
-  padding-right: 20px;
+  padding: 0 20px 0 0;
   text-align: justify;
   height: 100%;
 }
 @media (max-width: 480px) {
   .skills_container {
-    padding-right: 0px;
+    padding: 0;
     height: 50%;
   }
 }
@@ -316,11 +320,10 @@ button:hover {
 .skills_desc {
   text-align: justify;
   margin: 20px 0px;
-  padding-right: 20px;
+  padding: 0 20px 0 0;
 }
 @media (max-width: 480px) {
   .skills_desc {
-    padding-right: 0px;
     padding: 20px;
   }
 }
@@ -559,7 +562,7 @@ button:hover {
   background-color: transparent;
   perspective: 1000px;
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .card {
     width: 100%;
     height: 25vh;
@@ -604,21 +607,6 @@ button:hover {
   margin-top: auto;
   padding: 8px;
 }
-.footer_button {
-  background-color: transparent;
-  color: #fff;
-  font-size: 14px;
-  width: 8%;
-}
-.footer_button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-.footer img {
-  width: 20px;
-  height: 20px;
-  object-fit: scale-down;
-}
 
 @keyframes spinner {
   0% {
@@ -651,33 +639,19 @@ button:hover {
   list-style: none;
   text-align: start;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 480px) {
   .dropdown-menu {
-    width: auto;
     position: relative;
     top: 20px;
-    list-style: none;
-    text-align: start;
   }
 }
 .dropdown-menu li {
   background: #14151d;
   cursor: pointer;
 }
-@media screen and (max-width: 1000px) {
-  .dropdown-menu li {
-    background: #14151d;
-    cursor: pointer;
-  }
-}
 .dropdown-menu li:hover {
   background: #9E58AA;
   border: 1px solid #fff;
-}
-@media screen and (max-width: 1000px) {
-  .dropdown-menu li:hover {
-    background: #9E58AA;
-  }
 }
 
 .drop-menu {
@@ -706,9 +680,8 @@ button:hover {
   display: flex;
   touch-action: none;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 480px) {
   .nav-side-menu {
-    display: flex;
     flex-direction: column;
     width: 250px;
     height: 100vh;
@@ -722,7 +695,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 480px) {
   .nav-side-menu.start {
     background: #14151d;
     left: -42px;
@@ -736,19 +709,19 @@ button:hover {
   align-items: center;
   height: 80px;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 480px) {
   .nav-items {
     height: auto;
   }
 }
 
 .nav-links {
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 8px 20px;
   transition: all 0.3s ease-out;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 480px) {
   .nav-links {
     text-align: center;
     padding: 1.5rem;
@@ -774,7 +747,7 @@ button:hover {
   color: #fff;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 480px) {
   .fa-times {
     color: #fff;
     font-size: 2rem;
@@ -784,7 +757,7 @@ button:hover {
 .menu-icon {
   display: none;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 480px) {
   .menu-icon {
     display: block;
     position: absolute;
