@@ -5,8 +5,6 @@
     display: flex
     justify-content: center
     align-items: center
-    background-color: variables.$secondary-color
-    color: variables.$tertiary-color
     position: sticky
     top: 0
     z-index: 999
@@ -28,11 +26,9 @@
 
 .nav-side-menu.start
     @include base-mixins.mobile
-        background: variables.$secondary-color
         left: -42px
         opacity: 1
         transition: all 0.5s ease
-
 
 .nav-items
     display: flex
@@ -42,7 +38,6 @@
         height: auto
 
 .nav-links
-    color: variables.$primary-color
     text-decoration: none
     padding: 8px 20px
     transition: all 0.3s ease-out
@@ -50,23 +45,11 @@
         text-align: center
         padding: 1.5rem
         width: 100%
-        color: #fff
         display: table
         transition: 0s
 
-.nav-links:hover
-    background-color: variables.$tertiary-color
-    border: 1px solid variables.$primary-color
-    @media screen AND (max-width: 1000px)
-        background-color: #9E58AA
-        color: variables.$primary-color
-
-.fa-bars
-    color: variables.$primary-color
-
 .fa-times
     @include base-mixins.mobile
-        color: variables.$primary-color
         font-size: 2rem
 
 .menu-icon
@@ -79,5 +62,9 @@
         transform: translate(-100%, 60%)
         font-size: 1.8rem
         cursor: pointer
+
+.nav-button
+    background-color: transparent
+    border: none
 
     

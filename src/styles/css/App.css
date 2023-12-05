@@ -21,10 +21,6 @@
   background: #14151d;
 }
 
-::placeholder {
-  color: #fff;
-}
-
 input {
   background-color: transparent;
   width: 100%;
@@ -33,7 +29,6 @@ input {
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
-  color: #fff;
 }
 
 textarea {
@@ -43,15 +38,13 @@ textarea {
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
-  color: #fff;
 }
 
 button {
   width: 25%;
   border: 1px solid #9E58AA;
-  padding: 15px;
   background-color: #9E58AA;
-  color: #fff;
+  padding: 15px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -61,15 +54,152 @@ button {
   }
 }
 
-button:hover {
+.light {
+  background-color: #fff;
+  color: #14151d;
+}
+.light .btn {
+  color: #fff;
+}
+.light .btn:hover {
+  border: 1px solid #14151d;
+}
+.light input, .light textarea, .light ::placeholder {
+  color: #14151d;
+}
+.light .navbar {
+  background-color: #fff;
+}
+@media (max-width: 480px) {
+  .light .nav-side-menu.start {
+    background: #fff;
+  }
+}
+.light .nav-links {
+  color: #14151d;
+}
+@media (max-width: 480px) {
+  .light .nav-links {
+    color: #14151d;
+  }
+}
+.light .nav-links:hover {
+  color: #fff;
+  background-color: #9E58AA;
+  border: 1px solid #14151d;
+}
+@media screen and (max-width: 1000px) {
+  .light .nav-links:hover {
+    background-color: #9E58AA;
+    color: #fff;
+  }
+}
+.light .nav-button {
+  color: #14151d;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+.light .fa-bars {
+  color: #14151d;
+}
+@media (max-width: 480px) {
+  .light .fa-times {
+    color: #14151d;
+  }
+}
+.light .skills_button {
+  background: transparent;
+  cursor: pointer;
+  color: #14151d;
+}
+.light .skills_button:hover {
+  background: #9E58AA;
+  color: #fff;
   border: 1px solid #fff;
+}
+.light .skills_button:disabled {
+  background: #9E58AA;
+  color: #fff;
+  border: 1px solid #14151d;
+  cursor: not-allowed;
+}
+
+.dark {
+  background-color: #14151d;
+  color: #fff;
+}
+.dark .btn {
+  color: #fff;
+}
+.dark .btn:hover {
+  border: 1px solid #fff;
+}
+.dark input, .dark textarea, .dark ::placeholder {
+  color: #fff;
+}
+.dark .navbar {
+  background-color: #14151d;
+  color: #fff;
+}
+@media (max-width: 480px) {
+  .dark .nav-side-menu.start {
+    background: #14151d;
+  }
+}
+.dark .nav-links {
+  color: #fff;
+}
+@media (max-width: 480px) {
+  .dark .nav-links {
+    color: #fff;
+  }
+}
+.dark .nav-links:hover {
+  color: #fff;
+  background-color: #9E58AA;
+  border: 1px solid #fff;
+}
+@media screen and (max-width: 1000px) {
+  .dark .nav-links:hover {
+    background-color: #9E58AA;
+    color: #fff;
+  }
+}
+.dark .nav-button {
+  color: #fff;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+.dark .fa-bars {
+  color: #fff;
+}
+@media (max-width: 480px) {
+  .dark .fa-times {
+    color: #fff;
+  }
+}
+.dark .skills_button {
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+.dark .skills_button:hover {
+  background: #9E58AA;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.dark .skills_button:disabled {
+  background: #9E58AA;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: not-allowed;
 }
 
 .home {
   display: flex;
   height: 100vh;
-  background-color: #14151d;
-  color: #fff;
 }
 @media (max-width: 480px) {
   .home {
@@ -151,8 +281,6 @@ button:hover {
 .about {
   display: flex;
   height: 100vh;
-  background-color: #14151d;
-  color: #fff;
 }
 @media (max-width: 480px) {
   .about {
@@ -214,8 +342,6 @@ button:hover {
 .productList {
   display: flex;
   height: 110vh;
-  background-color: #14151d;
-  color: #fff;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -267,8 +393,6 @@ button:hover {
 .skills {
   display: flex;
   height: 77vh;
-  background-color: #14151d;
-  color: #fff;
   align-items: center;
 }
 @media (max-width: 480px) {
@@ -380,29 +504,10 @@ button:hover {
     margin: 20px;
   }
 }
-.skills_button {
-  background: transparent;
-  color: #fff;
-  border: 1px solid #9E58AA;
-  cursor: pointer;
-}
-.skills_button:hover {
-  background: #9E58AA;
-  color: #fff;
-  border: 1px solid #fff;
-}
-.skills_button:disabled {
-  background: #9E58AA;
-  color: #fff;
-  border: 1px solid #fff;
-  cursor: not-allowed;
-}
 
 .timeline {
   display: flex;
   height: 130vh;
-  background-color: #14151d;
-  color: #fff;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -439,8 +544,6 @@ button:hover {
 .contact {
   display: flex;
   height: 120vh;
-  background-color: #14151d;
-  color: #fff;
 }
 @media (max-width: 480px) {
   .contact {
@@ -669,8 +772,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #14151d;
-  color: #9E58AA;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -697,7 +798,6 @@ button:hover {
 
 @media (max-width: 480px) {
   .nav-side-menu.start {
-    background: #14151d;
     left: -42px;
     opacity: 1;
     transition: all 0.5s ease;
@@ -716,7 +816,6 @@ button:hover {
 }
 
 .nav-links {
-  color: #fff;
   text-decoration: none;
   padding: 8px 20px;
   transition: all 0.3s ease-out;
@@ -726,30 +825,13 @@ button:hover {
     text-align: center;
     padding: 1.5rem;
     width: 100%;
-    color: #fff;
     display: table;
     transition: 0s;
   }
 }
 
-.nav-links:hover {
-  background-color: #9E58AA;
-  border: 1px solid #fff;
-}
-@media screen and (max-width: 1000px) {
-  .nav-links:hover {
-    background-color: #9E58AA;
-    color: #fff;
-  }
-}
-
-.fa-bars {
-  color: #fff;
-}
-
 @media (max-width: 480px) {
   .fa-times {
-    color: #fff;
     font-size: 2rem;
   }
 }
@@ -767,6 +849,11 @@ button:hover {
     font-size: 1.8rem;
     cursor: pointer;
   }
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
 }
 
 /*# sourceMappingURL=App.css.map */

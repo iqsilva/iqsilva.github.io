@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Dropdown from '../dropdown/Dropdown'
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../../hooks/useTheme";
   
 const Navbar = () => {
     const { t } = useTranslation();
@@ -8,10 +9,16 @@ const Navbar = () => {
     const [dropdown, setDropdown] = useState(false)
     const changeClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
+    const {theme, setTheme} = useTheme();
 
     const onMouseEnter = () => {
         setDropdown(!dropdown);
     }
+
+    const changeTheme = (e) => {
+      e.preventDefault();
+      setTheme(!theme);
+  }
 
 return (
         <nav className="navbar">
@@ -41,6 +48,11 @@ return (
                   <a className='nav-links' onClick={onMouseEnter}><i className='fa fa-language' />&nbsp;{t("navbar_language")}
                     {dropdown && <Dropdown/>}
                   </a>
+              </li>
+              <li className='nav-items'>
+                <button className='nav-button' onClick={changeTheme}>
+                  {theme ? <i className="fa fa-moon-o"></i> : <i className="fa fa-sun-o"></i>}&nbsp;{t("navbar_theme")}
+                </button>
               </li>
           </ul>
         </nav>

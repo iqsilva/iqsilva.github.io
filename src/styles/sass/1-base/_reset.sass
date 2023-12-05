@@ -19,9 +19,6 @@
 ::-webkit-scrollbar-thumb:hover
     background: variables.$secondary-color
 
-::placeholder 
-   color: variables.$primary-color
-
 input
     background-color: transparent
     width: 100%
@@ -30,7 +27,6 @@ input
     margin: 10px 0px
     font-size: variables.$font-size
     padding-left: 10px
-    color: variables.$primary-color
 
 textarea
     background-color: transparent
@@ -39,18 +35,138 @@ textarea
     margin: 10px 0px
     font-size: 14px
     padding-left: 10px
-    color: variables.$primary-color
 
 button
     width: 25%
     border: 1px solid variables.$tertiary-color
-    padding: 15px
     background-color: variables.$tertiary-color
-    color: variables.$primary-color
+    padding: 15px
     font-weight: variables.$bt-font-weight
     cursor: pointer
     @include base-mixins.mobile
         width: 50%
 
-button:hover
+.light
+    background-color: variables.$primary-color
+    color: variables.$secondary-color
+
+    .btn
+        color: variables.$primary-color
+
+        &:hover
+            border: 1px solid variables.$secondary-color
+    
+    input, textarea, ::placeholder 
+        color: variables.$secondary-color
+
+    .navbar
+        background-color: variables.$primary-color
+
+    .nav-side-menu.start
+        @include base-mixins.mobile
+            background: variables.$primary-color
+    
+    .nav-links
+        color: variables.$secondary-color
+        @include base-mixins.mobile
+            color: variables.$secondary-color
+    
+    .nav-links:hover
+        color: variables.$primary-color
+        background-color: variables.$tertiary-color
+        border: 1px solid variables.$secondary-color
+        @media screen AND (max-width: 1000px)
+            background-color: variables.$tertiary-color
+            color: variables.$primary-color
+
+    .nav-button
+        color: variables.$secondary-color
+        height: 80px
+        width: 100%
+        text-align: center
+
+    .fa-bars
+        color: variables.$secondary-color
+
+    .fa-times
+        @include base-mixins.mobile
+            color: variables.$secondary-color
+    
+    .skills_button
+        background: transparent
+        cursor: pointer
+        color: variables.$secondary-color
+
+        &:hover
+            background: variables.$tertiary-color
+            color: variables.$primary-color
+            border: 1px solid variables.$primary-color
+
+        &:disabled
+            background: variables.$tertiary-color
+            color: variables.$primary-color
+            border: 1px solid variables.$secondary-color
+            cursor: not-allowed
+
+.dark
+    background-color: variables.$secondary-color
+    color: variables.$primary-color
+
+    .btn
+        color: variables.$primary-color
+
+        &:hover
+            border: 1px solid variables.$primary-color
+
+    input, textarea, ::placeholder 
+        color: variables.$primary-color
+
+    .navbar
+        background-color: variables.$secondary-color
+        color: variables.$primary-color
+
+    .nav-side-menu.start
+        @include base-mixins.mobile
+            background: variables.$secondary-color
+    
+    .nav-links
+        color: variables.$primary-color
+        @include base-mixins.mobile
+            color: variables.$primary-color
+    
+    .nav-links:hover
+        color: variables.$primary-color
+        background-color: variables.$tertiary-color
         border: 1px solid variables.$primary-color
+        @media screen AND (max-width: 1000px)
+            background-color: variables.$tertiary-color
+            color: variables.$primary-color
+    
+    .nav-button
+        color: variables.$primary-color
+        height: 80px
+        width: 100%
+        text-align: center
+
+    .fa-bars
+        color: variables.$primary-color
+
+    .fa-times
+        @include base-mixins.mobile
+            color: variables.$primary-color
+
+    .skills_button
+        background: transparent
+        cursor: pointer
+        color: variables.$primary-color
+
+        &:hover
+            background: variables.$tertiary-color
+            color: variables.$primary-color
+            border: 1px solid variables.$primary-color
+
+        &:disabled
+            background: variables.$tertiary-color
+            color: variables.$primary-color
+            border: 1px solid variables.$primary-color
+            cursor: not-allowed

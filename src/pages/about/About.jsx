@@ -24,7 +24,7 @@ const About = () => {
           <br /><br />
           {t("about_description_3")}
           </p>
-          <button onClick={handleDownload}>{t("about_button")}</button>
+          <button className="btn" onClick={handleDownload}>{t("about_button")}</button>
         </div>
       </div>
       <div className="about_right">

@@ -7,7 +7,7 @@ export const LocaleContext = createContext();
 export const LocaleProvider = ({ children }) => {
     LocaleProvider.propTypes = {
         children: PropTypes.string.isRequired
-      };
+    };
     const [locale, setLocale] = useState(i18n.language);
 
     i18n.on('languageChanged', () => setLocale(i18n.language))
