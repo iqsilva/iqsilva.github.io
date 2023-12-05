@@ -108,6 +108,13 @@ button {
     color: #14151d;
   }
 }
+.light .home_list a {
+  color: #14151d;
+  text-decoration: none;
+}
+.light .home_list a:hover {
+  color: #9E58AA;
+}
 .light .skills_button {
   background: transparent;
   cursor: pointer;
@@ -179,6 +186,13 @@ button {
   .dark .fa-times {
     color: #fff;
   }
+}
+.dark .home_list a {
+  color: #fff;
+  text-decoration: none;
+}
+.dark .home_list a:hover {
+  color: #9E58AA;
 }
 .dark .skills_button {
   background: transparent;
@@ -269,13 +283,6 @@ button {
 .home_list_item {
   margin: 1vh;
   padding: 1vh;
-}
-.home_list a {
-  color: #fff;
-  text-decoration: none;
-}
-.home_list a:hover {
-  color: #9E58AA;
 }
 
 .about {
