@@ -73,20 +73,3 @@
         list-style-type: none
         @include base-mixins.mobile
             margin: 20px
-        
-    &_button
-        background: transparent
-        color: variables.$primary-color
-        border: 1px solid variables.$tertiary-color
-        cursor: pointer
-
-        &:hover
-            background: variables.$tertiary-color
-            color: variables.$primary-color
-            border: 1px solid variables.$primary-color
-
-        &:disabled
-            background: variables.$tertiary-color
-            color: variables.$primary-color
-            border: 1px solid variables.$primary-color
-            cursor: not-allowed

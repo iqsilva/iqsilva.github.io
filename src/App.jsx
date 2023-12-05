@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -10,12 +10,13 @@ import Footer from "./components/footer/Footer";
 import "./styles/css/App.css";
 import './i18n'
 import { LocaleContext } from './contexts/LocaleContext'
-import {useContext} from 'react'
+import { useTheme } from "./hooks/useTheme";
 
 const App = () => {
   const currentLanguage = useContext(LocaleContext);
+  const { theme } = useTheme();
   return (
-    <div>
+    <div className={`${theme ? 'dark': 'light'}`}>
       <Navbar/>
       <Home/>
       <About/>

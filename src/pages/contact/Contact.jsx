@@ -76,7 +76,7 @@ const Contact = () => {
               placeholder={`${t("contact_message")}`}
               name="message"
             />
-            <button>{t("contact_button")}</button>
+            <button className="btn">{t("contact_button")}</button>
             {alert == 1 && <Alert type="success" message={`${t("success")}`}/>}
             {alert == 2 && <Alert type="error" message={`${t("error")}`}/>}
           </form>
