@@ -109,6 +109,12 @@
   ],
   "experiences": [
     {
+      "title": "2024",
+      "cardTitle": "John Deere",
+      "cardSubtitle": "Software Engineer",
+      "cardDetailedText": "ABAP, SAP, JavaScript, UI5, Fiori, AWS, Azure, Git, GitHub."
+    },
+    {
       "title": "2021",
       "cardTitle": "Philips Clinical Informatics",
       "cardSubtitle": "Experienced Level Developer",
